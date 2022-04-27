@@ -63,6 +63,8 @@ def simple_noise(base, deviation=1):
     while val <= 0 or val == None:
         val = simple_noise(base, deviation)
     return val
+    # inspired by:
+    # https://pypi.org/project/perlin-noise/
 
 def get_NYT(_url):
     # NOTE For grader:
