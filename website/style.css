@@ -1,0 +1,57 @@
+/* .h1{ } */
+div#txt p{
+    height: fit-content;
+    /* border-right: 1px solid black; */
+    padding-right: 3rem;
+
+}
+
+ul{
+    list-style: none;
+    padding-left: 1rem;
+}
+
+li{
+    margin-top: 1rem;
+}
+:root{
+    font-size: 16px;
+    font-family: prestige-elite-std, monospace;
+}
+.hoverable a{
+    text-decoration: none;
+}
+.hoverable a:hover{
+    text-decoration: underline;
+}
+a{
+    color: black;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .13em;
+
+}
+
+#left_side{margin: 0;
+    padding-top: 2rem;
+    padding-left: 1rem;
+
+    width: 40ch;
+
+}
+
+
+h1 {
+    margin-top: 0;
+    font-size: 1.802rem;
+}
+
+h2 {font-size: 1.602rem;}
+
+h3 {font-size: 1.424rem;}
+
+h4 {font-size: 1.266rem;}
+
+h5 {font-size: 1.125rem;}
+
+small, .text_small {font-size: 0.889rem;}
+

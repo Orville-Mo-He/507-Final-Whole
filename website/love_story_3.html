@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/cjy3rtu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Concrete Poetry of Modern Love: I Quietly, Foolishly Eloped</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    <script>
+        let data_0 = '{"The U.N. Security Council meets as Ukraine accuses Russia of atrocities.": {"At Least 200 Feared Dead in Apartments Hit by Russia, Officials Say": 54, "Up-Close Ukraine Atrocity Photographs Touch a Global Nerve": 59, "Stolen Darwin Notebooks, Missing for Decades, Are Returned": 33, "Some Ukrainian Refugees Are Returning Home, Despite the Risks": 46, "What are war crimes, and how are they prosecuted?": 55, "Jewish Man\u2019s Death Near Paris Fuels Outrage on Election Eve": 43, "Zelensky Accuses Russia of Atrocities and Criticizes U.N.\u2019s Inaction": 111, "Zelensky vilifies Russia over atrocities: \u2018They killed entire families.\u2019": 79, "Russian soldiers opened fire on a cyclist in Bucha, new video shows.": 22}, "At Least 200 Feared Dead in Apartments Hit by Russia, Officials Say": {"The U.N. Security Council meets as Ukraine accuses Russia of atrocities.": 54, "Up-Close Ukraine Atrocity Photographs Touch a Global Nerve": 131, "Stolen Darwin Notebooks, Missing for Decades, Are Returned": 65, "Some Ukrainian Refugees Are Returning Home, Despite the Risks": 111, "What are war crimes, and how are they prosecuted?": 70, "Jewish Man\u2019s Death Near Paris Fuels Outrage on Election Eve": 82, "Zelensky Accuses Russia of Atrocities and Criticizes U.N.\u2019s Inaction": 157, "Zelensky vilifies Russia over atrocities: \u2018They killed entire families.\u2019": 83, "Russian soldiers opened fire on a cyclist in Bucha, new video shows.": 45}, "Up-Close Ukraine Atrocity Photographs Touch a Global Nerve": {"The U.N. Security Council meets as Ukraine accuses Russia of atrocities.": 59, "At Least 200 Feared Dead in Apartments Hit by Russia, Officials Say": 131, "Stolen Darwin Notebooks, Missing for Decades, Are Returned": 71, "Some Ukrainian Refugees Are Returning Home, Despite the Risks": 109, "What are war crimes, and how are they prosecuted?": 105, "Jewish Man\u2019s Death Near Paris Fuels Outrage on Election Eve": 84, "Zelensky Accuses Russia of Atrocities and Criticizes U.N.\u2019s Inaction": 181, "Zelensky vilifies Russia over atrocities: \u2018They killed entire families.\u2019": 109, "Russian soldiers opened fire on a cyclist in Bucha, new video shows.": 62}, "Stolen Darwin Notebooks, Missing for Decades, Are Returned": {"The U.N. Security Council meets as Ukraine accuses Russia of atrocities.": 33, "At Least 200 Feared Dead in Apartments Hit by Russia, Officials Say": 65, "Up-Close Ukraine Atrocity Photographs Touch a Global Nerve": 71, "Some Ukrainian Refugees Are Returning Home, Despite the Risks": 67, "What are war crimes, and how are they prosecuted?": 49, "Jewish Man\u2019s Death Near Paris Fuels Outrage on Election Eve": 63, "Zelensky Accuses Russia of Atrocities and Criticizes U.N.\u2019s Inaction": 80, "Zelensky vilifies Russia over atrocities: \u2018They killed entire families.\u2019": 54, "Russian soldiers opened fire on a cyclist in Bucha, new video shows.": 32}, "Some Ukrainian Refugees Are Returning Home, Despite the Risks": {"The U.N. Security Council meets as Ukraine accuses Russia of atrocities.": 46, "At Least 200 Feared Dead in Apartments Hit by Russia, Officials Say": 111, "Up-Close Ukraine Atrocity Photographs Touch a Global Nerve": 109, "Stolen Darwin Notebooks, Missing for Decades, Are Returned": 67, "What are war crimes, and how are they prosecuted?": 57, "Jewish Man\u2019s Death Near Paris Fuels Outrage on Election Eve": 81, "Zelensky Accuses Russia of Atrocities and Criticizes U.N.\u2019s Inaction": 137, "Zelensky vilifies Russia over atrocities: \u2018They killed entire families.\u2019": 81, "Russian soldiers opened fire on a cyclist in Bucha, new video shows.": 32}, "What are war crimes, and how are they prosecuted?": {"The U.N. Security Council meets as Ukraine accuses Russia of atrocities.": 55, "At Least 200 Feared Dead in Apartments Hit by Russia, Officials Say": 70, "Up-Close Ukraine Atrocity Photographs Touch a Global Nerve": 105, "Stolen Darwin Notebooks, Missing for Decades, Are Returned": 49, "Some Ukrainian Refugees Are Returning Home, Despite the Risks": 57, "Jewish Man\u2019s Death Near Paris Fuels Outrage on Election Eve": 68, "Zelensky Accuses Russia of Atrocities and Criticizes U.N.\u2019s Inaction": 105, "Zelensky vilifies Russia over atrocities: \u2018They killed entire families.\u2019": 82, "Russian soldiers opened fire on a cyclist in Bucha, new video shows.": 33}, "Jewish Man\u2019s Death Near Paris Fuels Outrage on Election Eve": {"The U.N. Security Council meets as Ukraine accuses Russia of atrocities.": 43, "At Least 200 Feared Dead in Apartments Hit by Russia, Officials Say": 82, "Up-Close Ukraine Atrocity Photographs Touch a Global Nerve": 84, "Stolen Darwin Notebooks, Missing for Decades, Are Returned": 63, "Some Ukrainian Refugees Are Returning Home, Despite the Risks": 81, "What are war crimes, and how are they prosecuted?": 68, "Zelensky Accuses Russia of Atrocities and Criticizes U.N.\u2019s Inaction": 99, "Zelensky vilifies Russia over atrocities: \u2018They killed entire families.\u2019": 72, "Russian soldiers opened fire on a cyclist in Bucha, new video shows.": 30}, "Zelensky Accuses Russia of Atrocities and Criticizes U.N.\u2019s Inaction": {"The U.N. Security Council meets as Ukraine accuses Russia of atrocities.": 111, "At Least 200 Feared Dead in Apartments Hit by Russia, Officials Say": 157, "Up-Close Ukraine Atrocity Photographs Touch a Global Nerve": 181, "Stolen Darwin Notebooks, Missing for Decades, Are Returned": 80, "Some Ukrainian Refugees Are Returning Home, Despite the Risks": 137, "What are war crimes, and how are they prosecuted?": 105, "Jewish Man\u2019s Death Near Paris Fuels Outrage on Election Eve": 99, "Zelensky vilifies Russia over atrocities: \u2018They killed entire families.\u2019": 156, "Russian soldiers opened fire on a cyclist in Bucha, new video shows.": 56}, "Zelensky vilifies Russia over atrocities: \u2018They killed entire families.\u2019": {"The U.N. Security Council meets as Ukraine accuses Russia of atrocities.": 79, "At Least 200 Feared Dead in Apartments Hit by Russia, Officials Say": 83, "Up-Close Ukraine Atrocity Photographs Touch a Global Nerve": 109, "Stolen Darwin Notebooks, Missing for Decades, Are Returned": 54, "Some Ukrainian Refugees Are Returning Home, Despite the Risks": 81, "What are war crimes, and how are they prosecuted?": 82, "Jewish Man\u2019s Death Near Paris Fuels Outrage on Election Eve": 72, "Zelensky Accuses Russia of Atrocities and Criticizes U.N.\u2019s Inaction": 156, "Russian soldiers opened fire on a cyclist in Bucha, new video shows.": 42}, "Russian soldiers opened fire on a cyclist in Bucha, new video shows.": {"The U.N. Security Council meets as Ukraine accuses Russia of atrocities.": 22, "At Least 200 Feared Dead in Apartments Hit by Russia, Officials Say": 45, "Up-Close Ukraine Atrocity Photographs Touch a Global Nerve": 62, "Stolen Darwin Notebooks, Missing for Decades, Are Returned": 32, "Some Ukrainian Refugees Are Returning Home, Despite the Risks": 32, "What are war crimes, and how are they prosecuted?": 33, "Jewish Man\u2019s Death Near Paris Fuels Outrage on Election Eve": 30, "Zelensky Accuses Russia of Atrocities and Criticizes U.N.\u2019s Inaction": 56, "Zelensky vilifies Russia over atrocities: \u2018They killed entire families.\u2019": 42}}'
+        let min_max = JSON.parse('{"max": 181, "min": 22}')
+        
+        let min = min_max['min']
+        let max = min_max['max']
+
+        // some tests
+        // console.log(min)
+
+        let data = JSON.parse(data_0)
+        let headlines_ie_keys = Object.keys(data);
+
+        // console.log('Data.type')
+        // console.log(typeof(data));
+        // // object
+
+        // console.log('\nData[0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]);
+        // // the whole dictionary
+
+        // console.log('\nData[0][0].type')
+        // console.log(typeof(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]));
+        // // number
+
+        // console.log('\nData[0][0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]);
+        // // 96
+
+        // console.log('\nKeys: type, key[1], and headlines_ie_keys.length')
+        // console.log(typeof(headlines_ie_keys));
+        // // object
+        // console.log(headlines_ie_keys[1]);
+        // // Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years
+
+        // console.log(headlines_ie_keys.length);
+        // // 10
+
+
+
+
+        // P5 Section
+
+
+
+
+
+        let x_feeds = []
+        let y_feeds = []
+        let x_offsets = []
+        let y_offsets = []
+        let headlines_to_show = []
+        let starting_pt, h;
+        let whole_h
+        let stroke_weight
+        let weights_keys
+
+
+        function setup() {
+            starting_pt = 400;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight;
+
+            // canvas = createCanvas(document.body.clientWidth+(16), document.body.scrollHeight);
+            if(h > whole_h){
+                canvas = createCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                canvas = createCanvas(windowWidth, 1.1*whole_h);
+            };
+
+
+            canvas.position(0, 0);
+            canvas.style('z-index', '-1');
+            // console.log(data.headline);
+            // console.log('hi')
+
+            textFont('prestige-elite-std')
+
+            for(i=0; i < headlines_ie_keys.length; i++){
+
+                x_offsets[i] = random(0, 0.001);
+                y_offsets[i] = random(0, 0.001);
+
+                x_feeds[i] = random(0, 100);
+                y_feeds[i] = random(0, 500);
+
+                headlines_to_show[i] = new Headline(String(headlines_ie_keys[i]), x_offsets[i], y_offsets[i], x_feeds[i], y_feeds[i]);
+
+            };
+        };
+
+        function windowResized() {
+
+            starting_pt = 300;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight
+
+            if(h > whole_h){
+                resizeCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                resizeCanvas(windowWidth, 1.1*whole_h);
+            };    // canvas.style('width', windowWidth);
+            // canvas.style('height', document.body.scrollHeight);
+
+        };
+
+
+        class Headline{
+
+            constructor(_string, _x_offset, _y_offset, _x_feed, _y_feed){
+                this._string = _string;
+                this.x_offset = _x_offset;
+                this.y_offset = _y_offset;
+                this.x_feed = _x_feed;
+                this.y_feed = _y_feed;
+                this.x;
+                this.y;
+            };
+
+            show(){
+                this.place_and_move()
+                text(this._string, this.x, this.y, 200, 500);
+            };
+            place_and_move(){
+                this.x = map(noise(this.x_feed), 0, 1, starting_pt, windowWidth);
+                this.y = map(noise(this.y_feed), 0, 1, 0, windowHeight);
+                this.x_feed += this.x_offset;
+                this.y_feed += this.y_offset;
+            };
+        }
+
+        function draw(){
+
+            background(0);
+
+            rect(0, 0, 500, canvas.height)
+
+            noStroke();
+
+            push()
+            textSize(30)
+            fill(150, 42, 46)
+            text('Headlines of the Day', windowWidth/2, 100)
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                textStyle(BOLD);
+                textSize(16)
+                headlines_to_show[i].show();
+
+            };
+            pop()
+
+            push()
+            strokeCap(SQUARE);
+            stroke(150, 42, 46, 30);
+            fill(150, 42, 46, 30);
+
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                weights_keys = Object.keys(data[String(headlines_ie_keys[i])])
+
+                for(u=0; u<weights_keys.length; u++){
+                    push()
+                    stroke_weight = map(data[headlines_ie_keys[i]][weights_keys[u]], min, max, 1, 10)
+                    strokeWeight(stroke_weight)
+                    line(headlines_to_show[i].x-20, headlines_to_show[i].y, headlines_to_show[u].x-20, headlines_to_show[u].y)
+                    pop()
+                }
+                circle(headlines_to_show[i].x-20, headlines_to_show[i].y, 20)
+            };
+            pop()
+            // separated because if together, there would be no x or y for
+            // headlines_to_show[u]
+
+        };
+
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id='left_side'>
+            <h1>Concrete Poetry<br>&emsp;&emsp;&emsp;of Modern Love</h1>
+            <a id="back" href="index.html">&#8592; back</a>
+            <br><br>
+            <h2>I Quietly, Foolishly Eloped</h2>
+            <br><br>
+            <div id='txt'><p>&emsp;&emsp;&emsp;When&emsp;&emsp;&emsp;I&emsp;&emsp;&emsp;&emsp;was&emsp;&emsp;20,&emsp;&emsp;&emsp;&emsp;I&emsp;quietly,&emsp;&emsp;foolishly&emsp;&emsp;&emsp;&emsp;eloped.&emsp;&emsp;At&emsp;22,&emsp;&emsp;I&emsp;saw&emsp;&emsp;&emsp;a&emsp;&emsp;cute&emsp;&emsp;&emsp;&emsp;boy&emsp;&emsp;in&emsp;&emsp;&emsp;&emsp;the&emsp;corner&emsp;&emsp;of<br>&emsp;&emsp;&emsp;a&emsp;&emsp;college&emsp;&emsp;&emsp;Bible&emsp;study,&emsp;&emsp;&emsp;his&emsp;&emsp;hat&emsp;&emsp;&emsp;&emsp;pulled&emsp;low&emsp;over<br>&emsp;&emsp;&emsp;his&emsp;&emsp;glasses.&emsp;&emsp;&emsp;&emsp;I&emsp;&emsp;&emsp;&emsp;was&emsp;&emsp;still&emsp;&emsp;&emsp;—&emsp;unhappily,&emsp;&emsp;&emsp;secretly&emsp;—&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;married,&emsp;&emsp;but&emsp;I&emsp;&emsp;flirted&emsp;&emsp;with&emsp;&emsp;the&emsp;&emsp;boy.&emsp;&emsp;&emsp;He&emsp;&emsp;&emsp;was&emsp;&emsp;polite,&emsp;&emsp;&emsp;&emsp;nothing&emsp;more.<br>&emsp;&emsp;&emsp;&emsp;By&emsp;&emsp;&emsp;23,&emsp;&emsp;I&emsp;had&emsp;divorced,&emsp;escaping&emsp;&emsp;a&emsp;&emsp;miserable&emsp;&emsp;future.&emsp;&emsp;I<br>&emsp;rediscovered&emsp;&emsp;&emsp;my&emsp;&emsp;&emsp;faith&emsp;&emsp;&emsp;&emsp;and&emsp;&emsp;&emsp;the&emsp;&emsp;joy&emsp;of&emsp;&emsp;a&emsp;&emsp;close&emsp;&emsp;friend&emsp;&emsp;group,&emsp;including&emsp;the&emsp;boy&emsp;&emsp;in&emsp;&emsp;&emsp;&emsp;the&emsp;&emsp;hat.&emsp;&emsp;I&emsp;flirted,&emsp;&emsp;feeling&emsp;&emsp;awkward.&emsp;Then&emsp;one&emsp;&emsp;&emsp;&emsp;night,&emsp;&emsp;while&emsp;&emsp;&emsp;watching&emsp;&emsp;a&emsp;&emsp;movie,&emsp;the&emsp;&emsp;&emsp;&emsp;&emsp;boy<br>&emsp;put<br>&emsp;his&emsp;&emsp;arm&emsp;&emsp;around&emsp;&emsp;&emsp;me.&emsp;It’s&emsp;&emsp;&emsp;been&emsp;&emsp;&emsp;there&emsp;&emsp;&emsp;&emsp;for&emsp;15<br>&emsp;years.&emsp;&emsp;—&emsp;Jess&emsp;&emsp;&emsp;Locke</p></div>
+        </div>
+    </main>
+</body>

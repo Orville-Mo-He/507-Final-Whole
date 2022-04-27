@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/cjy3rtu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Concrete Poetry of Modern Love: Queer in Appalachia</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    <script>
+        let data_0 = '{"Convincing Victory Disguises Steep Challenges for Macron": {"As mask mandates end, Canada\u2019s Atlantic provinces see a virus resurgence.": 61, "Kenneth Roth, \u2018Godfather\u2019 of Human Rights Work, to Step Down": 94, "Explosions rattle a breakaway region in Moldova, raising fears of a broader war.": 81, "U.K. Tabloid Accuses Lawmaker of \u2018Basic Instinct\u2019 Move, Highlighting Sexism in Parliament": 87, "As Diplomacy Hopes Dim, U.S. Marshals Allies to Furnish Long-Term Military Aid to Ukraine": 101, "Russia cuts off a major supply of natural gas to Poland and Bulgaria.": 64, "Standing in the path of war, a small Ukrainian town braces as Russians advance.": 87, "Baking Challah in Dubai: A Jewish Community Heads Out Into the Open": 119, "North Korea Holds Military Parade With Nuclear Threat": 80}, "As mask mandates end, Canada\u2019s Atlantic provinces see a virus resurgence.": {"Convincing Victory Disguises Steep Challenges for Macron": 61, "Kenneth Roth, \u2018Godfather\u2019 of Human Rights Work, to Step Down": 54, "Explosions rattle a breakaway region in Moldova, raising fears of a broader war.": 44, "U.K. Tabloid Accuses Lawmaker of \u2018Basic Instinct\u2019 Move, Highlighting Sexism in Parliament": 48, "As Diplomacy Hopes Dim, U.S. Marshals Allies to Furnish Long-Term Military Aid to Ukraine": 51, "Russia cuts off a major supply of natural gas to Poland and Bulgaria.": 40, "Standing in the path of war, a small Ukrainian town braces as Russians advance.": 49, "Baking Challah in Dubai: A Jewish Community Heads Out Into the Open": 63, "North Korea Holds Military Parade With Nuclear Threat": 45}, "Kenneth Roth, \u2018Godfather\u2019 of Human Rights Work, to Step Down": {"Convincing Victory Disguises Steep Challenges for Macron": 94, "As mask mandates end, Canada\u2019s Atlantic provinces see a virus resurgence.": 54, "Explosions rattle a breakaway region in Moldova, raising fears of a broader war.": 79, "U.K. Tabloid Accuses Lawmaker of \u2018Basic Instinct\u2019 Move, Highlighting Sexism in Parliament": 77, "As Diplomacy Hopes Dim, U.S. Marshals Allies to Furnish Long-Term Military Aid to Ukraine": 104, "Russia cuts off a major supply of natural gas to Poland and Bulgaria.": 74, "Standing in the path of war, a small Ukrainian town braces as Russians advance.": 86, "Baking Challah in Dubai: A Jewish Community Heads Out Into the Open": 123, "North Korea Holds Military Parade With Nuclear Threat": 76}, "Explosions rattle a breakaway region in Moldova, raising fears of a broader war.": {"Convincing Victory Disguises Steep Challenges for Macron": 81, "As mask mandates end, Canada\u2019s Atlantic provinces see a virus resurgence.": 44, "Kenneth Roth, \u2018Godfather\u2019 of Human Rights Work, to Step Down": 79, "U.K. Tabloid Accuses Lawmaker of \u2018Basic Instinct\u2019 Move, Highlighting Sexism in Parliament": 62, "As Diplomacy Hopes Dim, U.S. Marshals Allies to Furnish Long-Term Military Aid to Ukraine": 130, "Russia cuts off a major supply of natural gas to Poland and Bulgaria.": 79, "Standing in the path of war, a small Ukrainian town braces as Russians advance.": 106, "Baking Challah in Dubai: A Jewish Community Heads Out Into the Open": 82, "North Korea Holds Military Parade With Nuclear Threat": 82}, "U.K. Tabloid Accuses Lawmaker of \u2018Basic Instinct\u2019 Move, Highlighting Sexism in Parliament": {"Convincing Victory Disguises Steep Challenges for Macron": 87, "As mask mandates end, Canada\u2019s Atlantic provinces see a virus resurgence.": 48, "Kenneth Roth, \u2018Godfather\u2019 of Human Rights Work, to Step Down": 77, "Explosions rattle a breakaway region in Moldova, raising fears of a broader war.": 62, "As Diplomacy Hopes Dim, U.S. Marshals Allies to Furnish Long-Term Military Aid to Ukraine": 87, "Russia cuts off a major supply of natural gas to Poland and Bulgaria.": 57, "Standing in the path of war, a small Ukrainian town braces as Russians advance.": 76, "Baking Challah in Dubai: A Jewish Community Heads Out Into the Open": 101, "North Korea Holds Military Parade With Nuclear Threat": 62}, "As Diplomacy Hopes Dim, U.S. Marshals Allies to Furnish Long-Term Military Aid to Ukraine": {"Convincing Victory Disguises Steep Challenges for Macron": 101, "As mask mandates end, Canada\u2019s Atlantic provinces see a virus resurgence.": 51, "Kenneth Roth, \u2018Godfather\u2019 of Human Rights Work, to Step Down": 104, "Explosions rattle a breakaway region in Moldova, raising fears of a broader war.": 130, "U.K. Tabloid Accuses Lawmaker of \u2018Basic Instinct\u2019 Move, Highlighting Sexism in Parliament": 87, "Russia cuts off a major supply of natural gas to Poland and Bulgaria.": 109, "Standing in the path of war, a small Ukrainian town braces as Russians advance.": 120, "Baking Challah in Dubai: A Jewish Community Heads Out Into the Open": 126, "North Korea Holds Military Parade With Nuclear Threat": 97}, "Russia cuts off a major supply of natural gas to Poland and Bulgaria.": {"Convincing Victory Disguises Steep Challenges for Macron": 64, "As mask mandates end, Canada\u2019s Atlantic provinces see a virus resurgence.": 40, "Kenneth Roth, \u2018Godfather\u2019 of Human Rights Work, to Step Down": 74, "Explosions rattle a breakaway region in Moldova, raising fears of a broader war.": 79, "U.K. Tabloid Accuses Lawmaker of \u2018Basic Instinct\u2019 Move, Highlighting Sexism in Parliament": 57, "As Diplomacy Hopes Dim, U.S. Marshals Allies to Furnish Long-Term Military Aid to Ukraine": 109, "Standing in the path of war, a small Ukrainian town braces as Russians advance.": 82, "Baking Challah in Dubai: A Jewish Community Heads Out Into the Open": 77, "North Korea Holds Military Parade With Nuclear Threat": 56}, "Standing in the path of war, a small Ukrainian town braces as Russians advance.": {"Convincing Victory Disguises Steep Challenges for Macron": 87, "As mask mandates end, Canada\u2019s Atlantic provinces see a virus resurgence.": 49, "Kenneth Roth, \u2018Godfather\u2019 of Human Rights Work, to Step Down": 86, "Explosions rattle a breakaway region in Moldova, raising fears of a broader war.": 106, "U.K. Tabloid Accuses Lawmaker of \u2018Basic Instinct\u2019 Move, Highlighting Sexism in Parliament": 76, "As Diplomacy Hopes Dim, U.S. Marshals Allies to Furnish Long-Term Military Aid to Ukraine": 120, "Russia cuts off a major supply of natural gas to Poland and Bulgaria.": 82, "Baking Challah in Dubai: A Jewish Community Heads Out Into the Open": 109, "North Korea Holds Military Parade With Nuclear Threat": 84}, "Baking Challah in Dubai: A Jewish Community Heads Out Into the Open": {"Convincing Victory Disguises Steep Challenges for Macron": 119, "As mask mandates end, Canada\u2019s Atlantic provinces see a virus resurgence.": 63, "Kenneth Roth, \u2018Godfather\u2019 of Human Rights Work, to Step Down": 123, "Explosions rattle a breakaway region in Moldova, raising fears of a broader war.": 82, "U.K. Tabloid Accuses Lawmaker of \u2018Basic Instinct\u2019 Move, Highlighting Sexism in Parliament": 101, "As Diplomacy Hopes Dim, U.S. Marshals Allies to Furnish Long-Term Military Aid to Ukraine": 126, "Russia cuts off a major supply of natural gas to Poland and Bulgaria.": 77, "Standing in the path of war, a small Ukrainian town braces as Russians advance.": 109, "North Korea Holds Military Parade With Nuclear Threat": 88}, "North Korea Holds Military Parade With Nuclear Threat": {"Convincing Victory Disguises Steep Challenges for Macron": 80, "As mask mandates end, Canada\u2019s Atlantic provinces see a virus resurgence.": 45, "Kenneth Roth, \u2018Godfather\u2019 of Human Rights Work, to Step Down": 76, "Explosions rattle a breakaway region in Moldova, raising fears of a broader war.": 82, "U.K. Tabloid Accuses Lawmaker of \u2018Basic Instinct\u2019 Move, Highlighting Sexism in Parliament": 62, "As Diplomacy Hopes Dim, U.S. Marshals Allies to Furnish Long-Term Military Aid to Ukraine": 97, "Russia cuts off a major supply of natural gas to Poland and Bulgaria.": 56, "Standing in the path of war, a small Ukrainian town braces as Russians advance.": 84, "Baking Challah in Dubai: A Jewish Community Heads Out Into the Open": 88}}'
+        let min_max = JSON.parse('{"max": 130, "min": 40}')
+        
+        let min = min_max['min']
+        let max = min_max['max']
+
+        // some tests
+        // console.log(min)
+
+        let data = JSON.parse(data_0)
+        let headlines_ie_keys = Object.keys(data);
+
+        // console.log('Data.type')
+        // console.log(typeof(data));
+        // // object
+
+        // console.log('\nData[0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]);
+        // // the whole dictionary
+
+        // console.log('\nData[0][0].type')
+        // console.log(typeof(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]));
+        // // number
+
+        // console.log('\nData[0][0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]);
+        // // 96
+
+        // console.log('\nKeys: type, key[1], and headlines_ie_keys.length')
+        // console.log(typeof(headlines_ie_keys));
+        // // object
+        // console.log(headlines_ie_keys[1]);
+        // // Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years
+
+        // console.log(headlines_ie_keys.length);
+        // // 10
+
+
+
+
+        // P5 Section
+
+
+
+
+
+        let x_feeds = []
+        let y_feeds = []
+        let x_offsets = []
+        let y_offsets = []
+        let headlines_to_show = []
+        let starting_pt, h;
+        let whole_h
+        let stroke_weight
+        let weights_keys
+
+
+        function setup() {
+            starting_pt = 400;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight;
+
+            // canvas = createCanvas(document.body.clientWidth+(16), document.body.scrollHeight);
+            if(h > whole_h){
+                canvas = createCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                canvas = createCanvas(windowWidth, 1.1*whole_h);
+            };
+
+
+            canvas.position(0, 0);
+            canvas.style('z-index', '-1');
+            // console.log(data.headline);
+            // console.log('hi')
+
+            textFont('prestige-elite-std')
+
+            for(i=0; i < headlines_ie_keys.length; i++){
+
+                x_offsets[i] = random(0, 0.001);
+                y_offsets[i] = random(0, 0.001);
+
+                x_feeds[i] = random(0, 100);
+                y_feeds[i] = random(0, 500);
+
+                headlines_to_show[i] = new Headline(String(headlines_ie_keys[i]), x_offsets[i], y_offsets[i], x_feeds[i], y_feeds[i]);
+
+            };
+        };
+
+        function windowResized() {
+
+            starting_pt = 300;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight
+
+            if(h > whole_h){
+                resizeCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                resizeCanvas(windowWidth, 1.1*whole_h);
+            };    // canvas.style('width', windowWidth);
+            // canvas.style('height', document.body.scrollHeight);
+
+        };
+
+
+        class Headline{
+
+            constructor(_string, _x_offset, _y_offset, _x_feed, _y_feed){
+                this._string = _string;
+                this.x_offset = _x_offset;
+                this.y_offset = _y_offset;
+                this.x_feed = _x_feed;
+                this.y_feed = _y_feed;
+                this.x;
+                this.y;
+            };
+
+            show(){
+                this.place_and_move()
+                text(this._string, this.x, this.y, 200, 500);
+            };
+            place_and_move(){
+                this.x = map(noise(this.x_feed), 0, 1, starting_pt, windowWidth);
+                this.y = map(noise(this.y_feed), 0, 1, 0, windowHeight);
+                this.x_feed += this.x_offset;
+                this.y_feed += this.y_offset;
+            };
+        }
+
+        function draw(){
+
+            background(0);
+
+            rect(0, 0, 500, canvas.height)
+
+            noStroke();
+
+            push()
+            textSize(30)
+            fill(150, 42, 46)
+            text('Headlines of the Day', windowWidth/2, 100)
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                textStyle(BOLD);
+                textSize(16)
+                headlines_to_show[i].show();
+
+            };
+            pop()
+
+            push()
+            strokeCap(SQUARE);
+            stroke(150, 42, 46, 30);
+            fill(150, 42, 46, 30);
+
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                weights_keys = Object.keys(data[String(headlines_ie_keys[i])])
+
+                for(u=0; u<weights_keys.length; u++){
+                    push()
+                    stroke_weight = map(data[headlines_ie_keys[i]][weights_keys[u]], min, max, 1, 10)
+                    strokeWeight(stroke_weight)
+                    line(headlines_to_show[i].x-20, headlines_to_show[i].y, headlines_to_show[u].x-20, headlines_to_show[u].y)
+                    pop()
+                }
+                circle(headlines_to_show[i].x-20, headlines_to_show[i].y, 20)
+            };
+            pop()
+            // separated because if together, there would be no x or y for
+            // headlines_to_show[u]
+
+        };
+
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id='left_side'>
+            <h1>Concrete Poetry<br>&emsp;&emsp;&emsp;of Modern Love</h1>
+            <a id="back" href="index.html">&#8592; back</a>
+            <br><br>
+            <h2>Queer in Appalachia</h2>
+            <br><br>
+            <div id='txt'><p>&emsp;&emsp;&emsp;&emsp;In&emsp;my&emsp;Appalachian&emsp;&emsp;family,&emsp;&emsp;&emsp;love&emsp;tastes<br>&emsp;&emsp;like&emsp;&emsp;apples.&emsp;&emsp;&emsp;Each&emsp;&emsp;teenage&emsp;&emsp;&emsp;woman&emsp;&emsp;goes&emsp;&emsp;&emsp;&emsp;&emsp;through&emsp;&emsp;a&emsp;&emsp;family&emsp;&emsp;tradition:&emsp;&emsp;&emsp;&emsp;mastering&emsp;a&emsp;&emsp;&emsp;signature&emsp;&emsp;apple-based&emsp;recipe&emsp;&emsp;&emsp;&emsp;to&emsp;&emsp;&emsp;feed&emsp;&emsp;&emsp;&emsp;her&emsp;&emsp;future&emsp;&emsp;&emsp;&emsp;husband.&emsp;(There&emsp;&emsp;are&emsp;a&emsp;&emsp;&emsp;&emsp;lot&emsp;&emsp;&emsp;of&emsp;&emsp;apples&emsp;&emsp;in<br>&emsp;Ashe&emsp;County,&emsp;&emsp;&emsp;N.C.)&emsp;My&emsp;great-grandmother&emsp;&emsp;&emsp;made<br>&emsp;&emsp;tarts;&emsp;&emsp;my&emsp;&emsp;&emsp;grandmother,&emsp;&emsp;&emsp;pies;&emsp;&emsp;&emsp;my&emsp;sister,&emsp;cakes&emsp;&emsp;and&emsp;&emsp;strudel.&emsp;&emsp;My&emsp;&emsp;cooking&emsp;&emsp;&emsp;&emsp;fails&emsp;were&emsp;&emsp;not&emsp;so&emsp;laudable.&emsp;I&emsp;burned&emsp;dozens&emsp;&emsp;of&emsp;&emsp;&emsp;desserts&emsp;&emsp;&emsp;&emsp;before<br>&emsp;&emsp;&emsp;I<br>&emsp;&emsp;&emsp;came&emsp;&emsp;&emsp;out&emsp;&emsp;&emsp;as&emsp;&emsp;gay.&emsp;&emsp;&emsp;Fortunately,&emsp;&emsp;my&emsp;&emsp;family&emsp;&emsp;&emsp;accepts&emsp;me,&emsp;&emsp;&emsp;and&emsp;&emsp;we&emsp;still&emsp;&emsp;cook&emsp;together.&emsp;Being&emsp;&emsp;queer<br>&emsp;in&emsp;Appalachia&emsp;&emsp;&emsp;can&emsp;&emsp;be&emsp;sour,&emsp;&emsp;but&emsp;also&emsp;sweet.&emsp;&emsp;&emsp;&emsp;My&emsp;&emsp;&emsp;family&emsp;&emsp;saves&emsp;&emsp;&emsp;&emsp;their&emsp;&emsp;&emsp;apple&emsp;&emsp;&emsp;cores<br>&emsp;and&emsp;&emsp;&emsp;peels,&emsp;&emsp;&emsp;and&emsp;&emsp;&emsp;I&emsp;&emsp;&emsp;ferment&emsp;&emsp;&emsp;&emsp;&emsp;apple<br>&emsp;&emsp;&emsp;&emsp;cider&emsp;&emsp;vinegar.&emsp;&emsp;—&emsp;&emsp;&emsp;Laken&emsp;Brooks</p></div>
+        </div>
+    </main>
+</body>

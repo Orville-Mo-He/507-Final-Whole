@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/cjy3rtu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Concrete Poetry of Modern Love: Our Most Mundane Conversations Became Contentious</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    <script>
+        let data_0 = '{"Coronavirus deaths in the U.S. fall to their lowest point since the summer.": {"A Vow to Ease Bombing Is Too Late for Many in Ukraine City Near Kyiv": 57, "Palestinian Gunman Kills 5 in Israel\u2019s Fifth Attack in Recent Days": 63, "Sanctioned Oligarch\u2019s Presence Adds Intrigue to Ukraine-Russia Talks": 65, "Shanghai\u2019s Lockdown Tests Covid-Zero Policy, and People\u2019s Limits": 97, "Reports of sexual violence involving Russian soldiers are multiplying, Ukrainian officials say.": 43, "In Kyiv Suburb, Ukrainian Military Claims a Big Prize": 61, "Peace Talks Produce Signs of Progress, but No End to War Is in Sight": 80, "Peace Talks May Be Little More Than Russian Tactics, Analysts Say": 70, "How Russia Is Using Ukrainians\u2019 Hunger as a Weapon of War": 78}, "A Vow to Ease Bombing Is Too Late for Many in Ukraine City Near Kyiv": {"Coronavirus deaths in the U.S. fall to their lowest point since the summer.": 57, "Palestinian Gunman Kills 5 in Israel\u2019s Fifth Attack in Recent Days": 96, "Sanctioned Oligarch\u2019s Presence Adds Intrigue to Ukraine-Russia Talks": 105, "Shanghai\u2019s Lockdown Tests Covid-Zero Policy, and People\u2019s Limits": 116, "Reports of sexual violence involving Russian soldiers are multiplying, Ukrainian officials say.": 89, "In Kyiv Suburb, Ukrainian Military Claims a Big Prize": 136, "Peace Talks Produce Signs of Progress, but No End to War Is in Sight": 143, "Peace Talks May Be Little More Than Russian Tactics, Analysts Say": 99, "How Russia Is Using Ukrainians\u2019 Hunger as a Weapon of War": 132}, "Palestinian Gunman Kills 5 in Israel\u2019s Fifth Attack in Recent Days": {"Coronavirus deaths in the U.S. fall to their lowest point since the summer.": 63, "A Vow to Ease Bombing Is Too Late for Many in Ukraine City Near Kyiv": 96, "Sanctioned Oligarch\u2019s Presence Adds Intrigue to Ukraine-Russia Talks": 98, "Shanghai\u2019s Lockdown Tests Covid-Zero Policy, and People\u2019s Limits": 102, "Reports of sexual violence involving Russian soldiers are multiplying, Ukrainian officials say.": 86, "In Kyiv Suburb, Ukrainian Military Claims a Big Prize": 96, "Peace Talks Produce Signs of Progress, but No End to War Is in Sight": 118, "Peace Talks May Be Little More Than Russian Tactics, Analysts Say": 83, "How Russia Is Using Ukrainians\u2019 Hunger as a Weapon of War": 92}, "Sanctioned Oligarch\u2019s Presence Adds Intrigue to Ukraine-Russia Talks": {"Coronavirus deaths in the U.S. fall to their lowest point since the summer.": 65, "A Vow to Ease Bombing Is Too Late for Many in Ukraine City Near Kyiv": 105, "Palestinian Gunman Kills 5 in Israel\u2019s Fifth Attack in Recent Days": 98, "Shanghai\u2019s Lockdown Tests Covid-Zero Policy, and People\u2019s Limits": 107, "Reports of sexual violence involving Russian soldiers are multiplying, Ukrainian officials say.": 79, "In Kyiv Suburb, Ukrainian Military Claims a Big Prize": 113, "Peace Talks Produce Signs of Progress, but No End to War Is in Sight": 156, "Peace Talks May Be Little More Than Russian Tactics, Analysts Say": 119, "How Russia Is Using Ukrainians\u2019 Hunger as a Weapon of War": 114}, "Shanghai\u2019s Lockdown Tests Covid-Zero Policy, and People\u2019s Limits": {"Coronavirus deaths in the U.S. fall to their lowest point since the summer.": 97, "A Vow to Ease Bombing Is Too Late for Many in Ukraine City Near Kyiv": 116, "Palestinian Gunman Kills 5 in Israel\u2019s Fifth Attack in Recent Days": 102, "Sanctioned Oligarch\u2019s Presence Adds Intrigue to Ukraine-Russia Talks": 107, "Reports of sexual violence involving Russian soldiers are multiplying, Ukrainian officials say.": 79, "In Kyiv Suburb, Ukrainian Military Claims a Big Prize": 112, "Peace Talks Produce Signs of Progress, but No End to War Is in Sight": 130, "Peace Talks May Be Little More Than Russian Tactics, Analysts Say": 91, "How Russia Is Using Ukrainians\u2019 Hunger as a Weapon of War": 124}, "Reports of sexual violence involving Russian soldiers are multiplying, Ukrainian officials say.": {"Coronavirus deaths in the U.S. fall to their lowest point since the summer.": 43, "A Vow to Ease Bombing Is Too Late for Many in Ukraine City Near Kyiv": 89, "Palestinian Gunman Kills 5 in Israel\u2019s Fifth Attack in Recent Days": 86, "Sanctioned Oligarch\u2019s Presence Adds Intrigue to Ukraine-Russia Talks": 79, "Shanghai\u2019s Lockdown Tests Covid-Zero Policy, and People\u2019s Limits": 79, "In Kyiv Suburb, Ukrainian Military Claims a Big Prize": 78, "Peace Talks Produce Signs of Progress, but No End to War Is in Sight": 100, "Peace Talks May Be Little More Than Russian Tactics, Analysts Say": 77, "How Russia Is Using Ukrainians\u2019 Hunger as a Weapon of War": 93}, "In Kyiv Suburb, Ukrainian Military Claims a Big Prize": {"Coronavirus deaths in the U.S. fall to their lowest point since the summer.": 61, "A Vow to Ease Bombing Is Too Late for Many in Ukraine City Near Kyiv": 136, "Palestinian Gunman Kills 5 in Israel\u2019s Fifth Attack in Recent Days": 96, "Sanctioned Oligarch\u2019s Presence Adds Intrigue to Ukraine-Russia Talks": 113, "Shanghai\u2019s Lockdown Tests Covid-Zero Policy, and People\u2019s Limits": 112, "Reports of sexual violence involving Russian soldiers are multiplying, Ukrainian officials say.": 78, "Peace Talks Produce Signs of Progress, but No End to War Is in Sight": 173, "Peace Talks May Be Little More Than Russian Tactics, Analysts Say": 132, "How Russia Is Using Ukrainians\u2019 Hunger as a Weapon of War": 114}, "Peace Talks Produce Signs of Progress, but No End to War Is in Sight": {"Coronavirus deaths in the U.S. fall to their lowest point since the summer.": 80, "A Vow to Ease Bombing Is Too Late for Many in Ukraine City Near Kyiv": 143, "Palestinian Gunman Kills 5 in Israel\u2019s Fifth Attack in Recent Days": 118, "Sanctioned Oligarch\u2019s Presence Adds Intrigue to Ukraine-Russia Talks": 156, "Shanghai\u2019s Lockdown Tests Covid-Zero Policy, and People\u2019s Limits": 130, "Reports of sexual violence involving Russian soldiers are multiplying, Ukrainian officials say.": 100, "In Kyiv Suburb, Ukrainian Military Claims a Big Prize": 173, "Peace Talks May Be Little More Than Russian Tactics, Analysts Say": 196, "How Russia Is Using Ukrainians\u2019 Hunger as a Weapon of War": 140}, "Peace Talks May Be Little More Than Russian Tactics, Analysts Say": {"Coronavirus deaths in the U.S. fall to their lowest point since the summer.": 70, "A Vow to Ease Bombing Is Too Late for Many in Ukraine City Near Kyiv": 99, "Palestinian Gunman Kills 5 in Israel\u2019s Fifth Attack in Recent Days": 83, "Sanctioned Oligarch\u2019s Presence Adds Intrigue to Ukraine-Russia Talks": 119, "Shanghai\u2019s Lockdown Tests Covid-Zero Policy, and People\u2019s Limits": 91, "Reports of sexual violence involving Russian soldiers are multiplying, Ukrainian officials say.": 77, "In Kyiv Suburb, Ukrainian Military Claims a Big Prize": 132, "Peace Talks Produce Signs of Progress, but No End to War Is in Sight": 196, "How Russia Is Using Ukrainians\u2019 Hunger as a Weapon of War": 109}, "How Russia Is Using Ukrainians\u2019 Hunger as a Weapon of War": {"Coronavirus deaths in the U.S. fall to their lowest point since the summer.": 78, "A Vow to Ease Bombing Is Too Late for Many in Ukraine City Near Kyiv": 132, "Palestinian Gunman Kills 5 in Israel\u2019s Fifth Attack in Recent Days": 92, "Sanctioned Oligarch\u2019s Presence Adds Intrigue to Ukraine-Russia Talks": 114, "Shanghai\u2019s Lockdown Tests Covid-Zero Policy, and People\u2019s Limits": 124, "Reports of sexual violence involving Russian soldiers are multiplying, Ukrainian officials say.": 93, "In Kyiv Suburb, Ukrainian Military Claims a Big Prize": 114, "Peace Talks Produce Signs of Progress, but No End to War Is in Sight": 140, "Peace Talks May Be Little More Than Russian Tactics, Analysts Say": 109}}'
+        let min_max = JSON.parse('{"max": 196, "min": 43}')
+        
+        let min = min_max['min']
+        let max = min_max['max']
+
+        // some tests
+        // console.log(min)
+
+        let data = JSON.parse(data_0)
+        let headlines_ie_keys = Object.keys(data);
+
+        // console.log('Data.type')
+        // console.log(typeof(data));
+        // // object
+
+        // console.log('\nData[0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]);
+        // // the whole dictionary
+
+        // console.log('\nData[0][0].type')
+        // console.log(typeof(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]));
+        // // number
+
+        // console.log('\nData[0][0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]);
+        // // 96
+
+        // console.log('\nKeys: type, key[1], and headlines_ie_keys.length')
+        // console.log(typeof(headlines_ie_keys));
+        // // object
+        // console.log(headlines_ie_keys[1]);
+        // // Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years
+
+        // console.log(headlines_ie_keys.length);
+        // // 10
+
+
+
+
+        // P5 Section
+
+
+
+
+
+        let x_feeds = []
+        let y_feeds = []
+        let x_offsets = []
+        let y_offsets = []
+        let headlines_to_show = []
+        let starting_pt, h;
+        let whole_h
+        let stroke_weight
+        let weights_keys
+
+
+        function setup() {
+            starting_pt = 400;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight;
+
+            // canvas = createCanvas(document.body.clientWidth+(16), document.body.scrollHeight);
+            if(h > whole_h){
+                canvas = createCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                canvas = createCanvas(windowWidth, 1.1*whole_h);
+            };
+
+
+            canvas.position(0, 0);
+            canvas.style('z-index', '-1');
+            // console.log(data.headline);
+            // console.log('hi')
+
+            textFont('prestige-elite-std')
+
+            for(i=0; i < headlines_ie_keys.length; i++){
+
+                x_offsets[i] = random(0, 0.001);
+                y_offsets[i] = random(0, 0.001);
+
+                x_feeds[i] = random(0, 100);
+                y_feeds[i] = random(0, 500);
+
+                headlines_to_show[i] = new Headline(String(headlines_ie_keys[i]), x_offsets[i], y_offsets[i], x_feeds[i], y_feeds[i]);
+
+            };
+        };
+
+        function windowResized() {
+
+            starting_pt = 300;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight
+
+            if(h > whole_h){
+                resizeCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                resizeCanvas(windowWidth, 1.1*whole_h);
+            };    // canvas.style('width', windowWidth);
+            // canvas.style('height', document.body.scrollHeight);
+
+        };
+
+
+        class Headline{
+
+            constructor(_string, _x_offset, _y_offset, _x_feed, _y_feed){
+                this._string = _string;
+                this.x_offset = _x_offset;
+                this.y_offset = _y_offset;
+                this.x_feed = _x_feed;
+                this.y_feed = _y_feed;
+                this.x;
+                this.y;
+            };
+
+            show(){
+                this.place_and_move()
+                text(this._string, this.x, this.y, 200, 500);
+            };
+            place_and_move(){
+                this.x = map(noise(this.x_feed), 0, 1, starting_pt, windowWidth);
+                this.y = map(noise(this.y_feed), 0, 1, 0, windowHeight);
+                this.x_feed += this.x_offset;
+                this.y_feed += this.y_offset;
+            };
+        }
+
+        function draw(){
+
+            background(0);
+
+            rect(0, 0, 500, canvas.height)
+
+            noStroke();
+
+            push()
+            textSize(30)
+            fill(150, 42, 46)
+            text('Headlines of the Day', windowWidth/2, 100)
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                textStyle(BOLD);
+                textSize(16)
+                headlines_to_show[i].show();
+
+            };
+            pop()
+
+            push()
+            strokeCap(SQUARE);
+            stroke(150, 42, 46, 30);
+            fill(150, 42, 46, 30);
+
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                weights_keys = Object.keys(data[String(headlines_ie_keys[i])])
+
+                for(u=0; u<weights_keys.length; u++){
+                    push()
+                    stroke_weight = map(data[headlines_ie_keys[i]][weights_keys[u]], min, max, 1, 10)
+                    strokeWeight(stroke_weight)
+                    line(headlines_to_show[i].x-20, headlines_to_show[i].y, headlines_to_show[u].x-20, headlines_to_show[u].y)
+                    pop()
+                }
+                circle(headlines_to_show[i].x-20, headlines_to_show[i].y, 20)
+            };
+            pop()
+            // separated because if together, there would be no x or y for
+            // headlines_to_show[u]
+
+        };
+
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id='left_side'>
+            <h1>Concrete Poetry<br>&emsp;&emsp;&emsp;of Modern Love</h1>
+            <a id="back" href="index.html">&#8592; back</a>
+            <br><br>
+            <h2>Our Most Mundane Conversations Became Contentious</h2>
+            <br><br>
+            <div id='txt'><p>&emsp;&emsp;&emsp;Long&emsp;before&emsp;her&emsp;diagnosis,&emsp;my&emsp;&emsp;&emsp;reliably&emsp;&emsp;cheerful&emsp;friend&emsp;turned&emsp;&emsp;&emsp;sour.&emsp;Even&emsp;our&emsp;&emsp;&emsp;most&emsp;&emsp;&emsp;&emsp;mundane&emsp;&emsp;&emsp;conversations&emsp;&emsp;&emsp;became&emsp;&emsp;contentious.&emsp;Pessimism&emsp;and&emsp;frustration&emsp;&emsp;&emsp;darkened&emsp;&emsp;&emsp;&emsp;her&emsp;world.&emsp;&emsp;&emsp;&emsp;Eventually,&emsp;as&emsp;&emsp;&emsp;words&emsp;eluded&emsp;&emsp;her&emsp;&emsp;&emsp;and&emsp;her&emsp;thinking&emsp;&emsp;grew&emsp;disorganized,&emsp;&emsp;&emsp;the&emsp;diagnosis&emsp;came:&emsp;&emsp;&emsp;early&emsp;&emsp;dementia.&emsp;&emsp;&emsp;Terrifying,&emsp;&emsp;yes,&emsp;&emsp;&emsp;but&emsp;&emsp;naming&emsp;&emsp;her&emsp;condition<br>&emsp;set&emsp;&emsp;&emsp;her&emsp;&emsp;free.&emsp;Her&emsp;&emsp;&emsp;&emsp;joy&emsp;&emsp;&emsp;returned&emsp;&emsp;in&emsp;&emsp;force.<br>&emsp;&emsp;Now,&emsp;&emsp;when&emsp;&emsp;&emsp;I&emsp;visit&emsp;&emsp;her&emsp;&emsp;&emsp;in&emsp;&emsp;her&emsp;assisted-living&emsp;&emsp;apartment,&emsp;a&emsp;&emsp;smile&emsp;&emsp;&emsp;lights&emsp;&emsp;her&emsp;&emsp;face.&emsp;Complex<br>&emsp;&emsp;&emsp;&emsp;sentences&emsp;are&emsp;out&emsp;of&emsp;her&emsp;reach.&emsp;&emsp;Instead,&emsp;she&emsp;&emsp;&emsp;pours&emsp;&emsp;&emsp;out&emsp;&emsp;&emsp;&emsp;pure&emsp;love&emsp;—&emsp;&emsp;&emsp;telling&emsp;&emsp;me&emsp;I’m&emsp;&emsp;wonderful,&emsp;&emsp;beautiful&emsp;&emsp;&emsp;and&emsp;smart.&emsp;&emsp;&emsp;&emsp;Her&emsp;&emsp;&emsp;son&emsp;&emsp;&emsp;says&emsp;&emsp;&emsp;her&emsp;&emsp;happiness&emsp;&emsp;lasts&emsp;&emsp;for&emsp;&emsp;&emsp;&emsp;hours&emsp;&emsp;after&emsp;&emsp;&emsp;our&emsp;&emsp;visits.&emsp;&emsp;—&emsp;&emsp;Elise&emsp;Gibson</p></div>
+        </div>
+    </main>
+</body>

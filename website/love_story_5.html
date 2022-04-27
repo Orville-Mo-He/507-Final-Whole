@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/cjy3rtu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Concrete Poetry of Modern Love: The Empty City Was Our Playground</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    <script>
+        let data_0 = '{"In Warsaw, a Network of Support Greets Those Crossing the Polish Border": {"1972: Millions of Workers Strike in Italy": 31, "No One Survived Flight 5735 Crash, China Says: What We Know": 68, "A Kremlin spokesman says Russia could use nuclear weapons if there is \u2018an existential threat for our country.\u2019": 44, "As Russia Stalls in Ukraine, Dissent Brews Over Putin\u2019s Leadership": 75, "Leaders of Israel, U.A.E. and Egypt Meet for Their First Summit": 68, "Two Teachers Killed at a School in Sweden": 27, "Here are the latest developments.": 37, "Four Killed in Southern Israel in Latest in Spate of Attacks": 47, "How Ukraine\u2019s Outgunned Air Force Is Fighting Back Against Russian Jets": 72}, "1972: Millions of Workers Strike in Italy": {"In Warsaw, a Network of Support Greets Those Crossing the Polish Border": 31, "No One Survived Flight 5735 Crash, China Says: What We Know": 44, "A Kremlin spokesman says Russia could use nuclear weapons if there is \u2018an existential threat for our country.\u2019": 19, "As Russia Stalls in Ukraine, Dissent Brews Over Putin\u2019s Leadership": 38, "Leaders of Israel, U.A.E. and Egypt Meet for Their First Summit": 35, "Two Teachers Killed at a School in Sweden": 15, "Here are the latest developments.": 12, "Four Killed in Southern Israel in Latest in Spate of Attacks": 31, "How Ukraine\u2019s Outgunned Air Force Is Fighting Back Against Russian Jets": 35}, "No One Survived Flight 5735 Crash, China Says: What We Know": {"In Warsaw, a Network of Support Greets Those Crossing the Polish Border": 68, "1972: Millions of Workers Strike in Italy": 44, "A Kremlin spokesman says Russia could use nuclear weapons if there is \u2018an existential threat for our country.\u2019": 46, "As Russia Stalls in Ukraine, Dissent Brews Over Putin\u2019s Leadership": 100, "Leaders of Israel, U.A.E. and Egypt Meet for Their First Summit": 69, "Two Teachers Killed at a School in Sweden": 40, "Here are the latest developments.": 34, "Four Killed in Southern Israel in Latest in Spate of Attacks": 54, "How Ukraine\u2019s Outgunned Air Force Is Fighting Back Against Russian Jets": 90}, "A Kremlin spokesman says Russia could use nuclear weapons if there is \u2018an existential threat for our country.\u2019": {"In Warsaw, a Network of Support Greets Those Crossing the Polish Border": 44, "1972: Millions of Workers Strike in Italy": 19, "No One Survived Flight 5735 Crash, China Says: What We Know": 46, "As Russia Stalls in Ukraine, Dissent Brews Over Putin\u2019s Leadership": 80, "Leaders of Israel, U.A.E. and Egypt Meet for Their First Summit": 50, "Two Teachers Killed at a School in Sweden": 16, "Here are the latest developments.": 28, "Four Killed in Southern Israel in Latest in Spate of Attacks": 27, "How Ukraine\u2019s Outgunned Air Force Is Fighting Back Against Russian Jets": 57}, "As Russia Stalls in Ukraine, Dissent Brews Over Putin\u2019s Leadership": {"In Warsaw, a Network of Support Greets Those Crossing the Polish Border": 75, "1972: Millions of Workers Strike in Italy": 38, "No One Survived Flight 5735 Crash, China Says: What We Know": 100, "A Kremlin spokesman says Russia could use nuclear weapons if there is \u2018an existential threat for our country.\u2019": 80, "Leaders of Israel, U.A.E. and Egypt Meet for Their First Summit": 111, "Two Teachers Killed at a School in Sweden": 33, "Here are the latest developments.": 60, "Four Killed in Southern Israel in Latest in Spate of Attacks": 73, "How Ukraine\u2019s Outgunned Air Force Is Fighting Back Against Russian Jets": 140}, "Leaders of Israel, U.A.E. and Egypt Meet for Their First Summit": {"In Warsaw, a Network of Support Greets Those Crossing the Polish Border": 68, "1972: Millions of Workers Strike in Italy": 35, "No One Survived Flight 5735 Crash, China Says: What We Know": 69, "A Kremlin spokesman says Russia could use nuclear weapons if there is \u2018an existential threat for our country.\u2019": 50, "As Russia Stalls in Ukraine, Dissent Brews Over Putin\u2019s Leadership": 111, "Two Teachers Killed at a School in Sweden": 29, "Here are the latest developments.": 44, "Four Killed in Southern Israel in Latest in Spate of Attacks": 90, "How Ukraine\u2019s Outgunned Air Force Is Fighting Back Against Russian Jets": 79}, "Two Teachers Killed at a School in Sweden": {"In Warsaw, a Network of Support Greets Those Crossing the Polish Border": 27, "1972: Millions of Workers Strike in Italy": 15, "No One Survived Flight 5735 Crash, China Says: What We Know": 40, "A Kremlin spokesman says Russia could use nuclear weapons if there is \u2018an existential threat for our country.\u2019": 16, "As Russia Stalls in Ukraine, Dissent Brews Over Putin\u2019s Leadership": 33, "Leaders of Israel, U.A.E. and Egypt Meet for Their First Summit": 29, "Here are the latest developments.": 15, "Four Killed in Southern Israel in Latest in Spate of Attacks": 37, "How Ukraine\u2019s Outgunned Air Force Is Fighting Back Against Russian Jets": 24}, "Here are the latest developments.": {"In Warsaw, a Network of Support Greets Those Crossing the Polish Border": 37, "1972: Millions of Workers Strike in Italy": 12, "No One Survived Flight 5735 Crash, China Says: What We Know": 34, "A Kremlin spokesman says Russia could use nuclear weapons if there is \u2018an existential threat for our country.\u2019": 28, "As Russia Stalls in Ukraine, Dissent Brews Over Putin\u2019s Leadership": 60, "Leaders of Israel, U.A.E. and Egypt Meet for Their First Summit": 44, "Two Teachers Killed at a School in Sweden": 15, "Four Killed in Southern Israel in Latest in Spate of Attacks": 27, "How Ukraine\u2019s Outgunned Air Force Is Fighting Back Against Russian Jets": 30}, "Four Killed in Southern Israel in Latest in Spate of Attacks": {"In Warsaw, a Network of Support Greets Those Crossing the Polish Border": 47, "1972: Millions of Workers Strike in Italy": 31, "No One Survived Flight 5735 Crash, China Says: What We Know": 54, "A Kremlin spokesman says Russia could use nuclear weapons if there is \u2018an existential threat for our country.\u2019": 27, "As Russia Stalls in Ukraine, Dissent Brews Over Putin\u2019s Leadership": 73, "Leaders of Israel, U.A.E. and Egypt Meet for Their First Summit": 90, "Two Teachers Killed at a School in Sweden": 37, "Here are the latest developments.": 27, "How Ukraine\u2019s Outgunned Air Force Is Fighting Back Against Russian Jets": 61}, "How Ukraine\u2019s Outgunned Air Force Is Fighting Back Against Russian Jets": {"In Warsaw, a Network of Support Greets Those Crossing the Polish Border": 72, "1972: Millions of Workers Strike in Italy": 35, "No One Survived Flight 5735 Crash, China Says: What We Know": 90, "A Kremlin spokesman says Russia could use nuclear weapons if there is \u2018an existential threat for our country.\u2019": 57, "As Russia Stalls in Ukraine, Dissent Brews Over Putin\u2019s Leadership": 140, "Leaders of Israel, U.A.E. and Egypt Meet for Their First Summit": 79, "Two Teachers Killed at a School in Sweden": 24, "Here are the latest developments.": 30, "Four Killed in Southern Israel in Latest in Spate of Attacks": 61}}'
+        let min_max = JSON.parse('{"max": 140, "min": 12}')
+        
+        let min = min_max['min']
+        let max = min_max['max']
+
+        // some tests
+        // console.log(min)
+
+        let data = JSON.parse(data_0)
+        let headlines_ie_keys = Object.keys(data);
+
+        // console.log('Data.type')
+        // console.log(typeof(data));
+        // // object
+
+        // console.log('\nData[0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]);
+        // // the whole dictionary
+
+        // console.log('\nData[0][0].type')
+        // console.log(typeof(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]));
+        // // number
+
+        // console.log('\nData[0][0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]);
+        // // 96
+
+        // console.log('\nKeys: type, key[1], and headlines_ie_keys.length')
+        // console.log(typeof(headlines_ie_keys));
+        // // object
+        // console.log(headlines_ie_keys[1]);
+        // // Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years
+
+        // console.log(headlines_ie_keys.length);
+        // // 10
+
+
+
+
+        // P5 Section
+
+
+
+
+
+        let x_feeds = []
+        let y_feeds = []
+        let x_offsets = []
+        let y_offsets = []
+        let headlines_to_show = []
+        let starting_pt, h;
+        let whole_h
+        let stroke_weight
+        let weights_keys
+
+
+        function setup() {
+            starting_pt = 400;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight;
+
+            // canvas = createCanvas(document.body.clientWidth+(16), document.body.scrollHeight);
+            if(h > whole_h){
+                canvas = createCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                canvas = createCanvas(windowWidth, 1.1*whole_h);
+            };
+
+
+            canvas.position(0, 0);
+            canvas.style('z-index', '-1');
+            // console.log(data.headline);
+            // console.log('hi')
+
+            textFont('prestige-elite-std')
+
+            for(i=0; i < headlines_ie_keys.length; i++){
+
+                x_offsets[i] = random(0, 0.001);
+                y_offsets[i] = random(0, 0.001);
+
+                x_feeds[i] = random(0, 100);
+                y_feeds[i] = random(0, 500);
+
+                headlines_to_show[i] = new Headline(String(headlines_ie_keys[i]), x_offsets[i], y_offsets[i], x_feeds[i], y_feeds[i]);
+
+            };
+        };
+
+        function windowResized() {
+
+            starting_pt = 300;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight
+
+            if(h > whole_h){
+                resizeCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                resizeCanvas(windowWidth, 1.1*whole_h);
+            };    // canvas.style('width', windowWidth);
+            // canvas.style('height', document.body.scrollHeight);
+
+        };
+
+
+        class Headline{
+
+            constructor(_string, _x_offset, _y_offset, _x_feed, _y_feed){
+                this._string = _string;
+                this.x_offset = _x_offset;
+                this.y_offset = _y_offset;
+                this.x_feed = _x_feed;
+                this.y_feed = _y_feed;
+                this.x;
+                this.y;
+            };
+
+            show(){
+                this.place_and_move()
+                text(this._string, this.x, this.y, 200, 500);
+            };
+            place_and_move(){
+                this.x = map(noise(this.x_feed), 0, 1, starting_pt, windowWidth);
+                this.y = map(noise(this.y_feed), 0, 1, 0, windowHeight);
+                this.x_feed += this.x_offset;
+                this.y_feed += this.y_offset;
+            };
+        }
+
+        function draw(){
+
+            background(0);
+
+            rect(0, 0, 500, canvas.height)
+
+            noStroke();
+
+            push()
+            textSize(30)
+            fill(150, 42, 46)
+            text('Headlines of the Day', windowWidth/2, 100)
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                textStyle(BOLD);
+                textSize(16)
+                headlines_to_show[i].show();
+
+            };
+            pop()
+
+            push()
+            strokeCap(SQUARE);
+            stroke(150, 42, 46, 30);
+            fill(150, 42, 46, 30);
+
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                weights_keys = Object.keys(data[String(headlines_ie_keys[i])])
+
+                for(u=0; u<weights_keys.length; u++){
+                    push()
+                    stroke_weight = map(data[headlines_ie_keys[i]][weights_keys[u]], min, max, 1, 10)
+                    strokeWeight(stroke_weight)
+                    line(headlines_to_show[i].x-20, headlines_to_show[i].y, headlines_to_show[u].x-20, headlines_to_show[u].y)
+                    pop()
+                }
+                circle(headlines_to_show[i].x-20, headlines_to_show[i].y, 20)
+            };
+            pop()
+            // separated because if together, there would be no x or y for
+            // headlines_to_show[u]
+
+        };
+
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id='left_side'>
+            <h1>Concrete Poetry<br>&emsp;&emsp;&emsp;of Modern Love</h1>
+            <a id="back" href="index.html">&#8592; back</a>
+            <br><br>
+            <h2>The Empty City Was Our Playground</h2>
+            <br><br>
+            <div id='txt'><p>&emsp;&emsp;&emsp;Our&emsp;schedules&emsp;were<br>&emsp;opposite:&emsp;&emsp;office&emsp;&emsp;&emsp;and&emsp;&emsp;restaurant.&emsp;&emsp;&emsp;But&emsp;&emsp;&emsp;&emsp;then&emsp;&emsp;&emsp;&emsp;the&emsp;&emsp;world&emsp;shut<br>&emsp;&emsp;&emsp;&emsp;down,&emsp;and&emsp;&emsp;the&emsp;&emsp;dining&emsp;rooms<br>&emsp;&emsp;&emsp;&emsp;were&emsp;&emsp;closed.&emsp;&emsp;&emsp;When&emsp;Aiesha&emsp;&emsp;&emsp;&emsp;would&emsp;&emsp;&emsp;&emsp;normally<br>&emsp;be&emsp;&emsp;waiting&emsp;&emsp;&emsp;tables,&emsp;we&emsp;were&emsp;&emsp;&emsp;&emsp;riding&emsp;&emsp;&emsp;our&emsp;bikes&emsp;&emsp;&emsp;&emsp;through&emsp;Little&emsp;Rock’s&emsp;&emsp;empty&emsp;&emsp;downtown.&emsp;&emsp;&emsp;Logging&emsp;&emsp;&emsp;off&emsp;&emsp;&emsp;from&emsp;&emsp;my<br>&emsp;&emsp;&emsp;remote&emsp;&emsp;work&emsp;&emsp;felt&emsp;&emsp;&emsp;like&emsp;&emsp;hearing&emsp;a&emsp;&emsp;&emsp;school&emsp;bell<br>&emsp;ring.&emsp;&emsp;&emsp;&emsp;The&emsp;&emsp;&emsp;empty&emsp;city&emsp;&emsp;&emsp;was&emsp;&emsp;our<br>&emsp;&emsp;playground.&emsp;I&emsp;remember&emsp;riding&emsp;&emsp;&emsp;&emsp;our<br>&emsp;&emsp;&emsp;bikes&emsp;&emsp;&emsp;along&emsp;&emsp;&emsp;&emsp;the&emsp;&emsp;&emsp;Arkansas&emsp;&emsp;River<br>&emsp;&emsp;in<br>&emsp;&emsp;the&emsp;&emsp;dark&emsp;with&emsp;&emsp;a&emsp;huge&emsp;&emsp;&emsp;smile&emsp;on&emsp;&emsp;my&emsp;&emsp;face.&emsp;&emsp;It&emsp;was<br>&emsp;&emsp;&emsp;the<br>&emsp;best<br>&emsp;kind&emsp;of&emsp;smile,&emsp;&emsp;&emsp;unseen&emsp;&emsp;&emsp;and<br>&emsp;&emsp;electric.&emsp;Somehow,&emsp;I&emsp;&emsp;&emsp;&emsp;&emsp;knew&emsp;&emsp;happiness&emsp;&emsp;within&emsp;&emsp;&emsp;a&emsp;tragedy.&emsp;&emsp;&emsp;I&emsp;found&emsp;&emsp;my&emsp;&emsp;&emsp;best&emsp;&emsp;&emsp;friend.&emsp;&emsp;&emsp;—&emsp;Kim&emsp;&emsp;&emsp;&emsp;Mai<br>&emsp;Draheim</p></div>
+        </div>
+    </main>
+</body>

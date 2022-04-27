@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/cjy3rtu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Concrete Poetry of Modern Love: We Never Asked; He Never Explained</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    <script>
+        let data_0 = '{"This Beach in Mexico Is an L.G.B.T.Q. Haven. But Can It Last?": {"Macron and Le Pen Trade Jabs and Lean Left as French Race Heats Up": 89, "Ukraine says a political ally of Putin has been detained in a \u2018special operation.\u2019": 27, "Boris Johnson Fined for Breaking U.K. Lockdown Rules": 86, "The world surpasses half a billion known coronavirus cases, amid concerns about testing.": 74, "An Angry Public Wants Sri Lanka\u2019s President Gone": 108, "A German State Is Last in Almost Everything. But It\u2019s No. 1 in Vaccines.": 101, "From the U.S. to China: A 3-Month Quarantine Horror Story": 96, "Boris Johnson is fined for breaking British lockdown rules.": 47, "Name, phone, address: The writing on a child\u2019s back is now a symbol of Ukrainian parents\u2019 terror.": 69}, "Macron and Le Pen Trade Jabs and Lean Left as French Race Heats Up": {"This Beach in Mexico Is an L.G.B.T.Q. Haven. But Can It Last?": 89, "Ukraine says a political ally of Putin has been detained in a \u2018special operation.\u2019": 27, "Boris Johnson Fined for Breaking U.K. Lockdown Rules": 86, "The world surpasses half a billion known coronavirus cases, amid concerns about testing.": 56, "An Angry Public Wants Sri Lanka\u2019s President Gone": 93, "A German State Is Last in Almost Everything. But It\u2019s No. 1 in Vaccines.": 100, "From the U.S. to China: A 3-Month Quarantine Horror Story": 85, "Boris Johnson is fined for breaking British lockdown rules.": 54, "Name, phone, address: The writing on a child\u2019s back is now a symbol of Ukrainian parents\u2019 terror.": 66}, "Ukraine says a political ally of Putin has been detained in a \u2018special operation.\u2019": {"This Beach in Mexico Is an L.G.B.T.Q. Haven. But Can It Last?": 27, "Macron and Le Pen Trade Jabs and Lean Left as French Race Heats Up": 27, "Boris Johnson Fined for Breaking U.K. Lockdown Rules": 30, "The world surpasses half a billion known coronavirus cases, amid concerns about testing.": 17, "An Angry Public Wants Sri Lanka\u2019s President Gone": 32, "A German State Is Last in Almost Everything. But It\u2019s No. 1 in Vaccines.": 26, "From the U.S. to China: A 3-Month Quarantine Horror Story": 26, "Boris Johnson is fined for breaking British lockdown rules.": 21, "Name, phone, address: The writing on a child\u2019s back is now a symbol of Ukrainian parents\u2019 terror.": 30}, "Boris Johnson Fined for Breaking U.K. Lockdown Rules": {"This Beach in Mexico Is an L.G.B.T.Q. Haven. But Can It Last?": 86, "Macron and Le Pen Trade Jabs and Lean Left as French Race Heats Up": 86, "Ukraine says a political ally of Putin has been detained in a \u2018special operation.\u2019": 30, "The world surpasses half a billion known coronavirus cases, amid concerns about testing.": 65, "An Angry Public Wants Sri Lanka\u2019s President Gone": 99, "A German State Is Last in Almost Everything. But It\u2019s No. 1 in Vaccines.": 82, "From the U.S. to China: A 3-Month Quarantine Horror Story": 84, "Boris Johnson is fined for breaking British lockdown rules.": 205, "Name, phone, address: The writing on a child\u2019s back is now a symbol of Ukrainian parents\u2019 terror.": 70}, "The world surpasses half a billion known coronavirus cases, amid concerns about testing.": {"This Beach in Mexico Is an L.G.B.T.Q. Haven. But Can It Last?": 74, "Macron and Le Pen Trade Jabs and Lean Left as French Race Heats Up": 56, "Ukraine says a political ally of Putin has been detained in a \u2018special operation.\u2019": 17, "Boris Johnson Fined for Breaking U.K. Lockdown Rules": 65, "An Angry Public Wants Sri Lanka\u2019s President Gone": 75, "A German State Is Last in Almost Everything. But It\u2019s No. 1 in Vaccines.": 76, "From the U.S. to China: A 3-Month Quarantine Horror Story": 79, "Boris Johnson is fined for breaking British lockdown rules.": 34, "Name, phone, address: The writing on a child\u2019s back is now a symbol of Ukrainian parents\u2019 terror.": 45}, "An Angry Public Wants Sri Lanka\u2019s President Gone": {"This Beach in Mexico Is an L.G.B.T.Q. Haven. But Can It Last?": 108, "Macron and Le Pen Trade Jabs and Lean Left as French Race Heats Up": 93, "Ukraine says a political ally of Putin has been detained in a \u2018special operation.\u2019": 32, "Boris Johnson Fined for Breaking U.K. Lockdown Rules": 99, "The world surpasses half a billion known coronavirus cases, amid concerns about testing.": 75, "A German State Is Last in Almost Everything. But It\u2019s No. 1 in Vaccines.": 108, "From the U.S. to China: A 3-Month Quarantine Horror Story": 97, "Boris Johnson is fined for breaking British lockdown rules.": 62, "Name, phone, address: The writing on a child\u2019s back is now a symbol of Ukrainian parents\u2019 terror.": 75}, "A German State Is Last in Almost Everything. But It\u2019s No. 1 in Vaccines.": {"This Beach in Mexico Is an L.G.B.T.Q. Haven. But Can It Last?": 101, "Macron and Le Pen Trade Jabs and Lean Left as French Race Heats Up": 100, "Ukraine says a political ally of Putin has been detained in a \u2018special operation.\u2019": 26, "Boris Johnson Fined for Breaking U.K. Lockdown Rules": 82, "The world surpasses half a billion known coronavirus cases, amid concerns about testing.": 76, "An Angry Public Wants Sri Lanka\u2019s President Gone": 108, "From the U.S. to China: A 3-Month Quarantine Horror Story": 95, "Boris Johnson is fined for breaking British lockdown rules.": 52, "Name, phone, address: The writing on a child\u2019s back is now a symbol of Ukrainian parents\u2019 terror.": 75}, "From the U.S. to China: A 3-Month Quarantine Horror Story": {"This Beach in Mexico Is an L.G.B.T.Q. Haven. But Can It Last?": 96, "Macron and Le Pen Trade Jabs and Lean Left as French Race Heats Up": 85, "Ukraine says a political ally of Putin has been detained in a \u2018special operation.\u2019": 26, "Boris Johnson Fined for Breaking U.K. Lockdown Rules": 84, "The world surpasses half a billion known coronavirus cases, amid concerns about testing.": 79, "An Angry Public Wants Sri Lanka\u2019s President Gone": 97, "A German State Is Last in Almost Everything. But It\u2019s No. 1 in Vaccines.": 95, "Boris Johnson is fined for breaking British lockdown rules.": 53, "Name, phone, address: The writing on a child\u2019s back is now a symbol of Ukrainian parents\u2019 terror.": 79}, "Boris Johnson is fined for breaking British lockdown rules.": {"This Beach in Mexico Is an L.G.B.T.Q. Haven. But Can It Last?": 47, "Macron and Le Pen Trade Jabs and Lean Left as French Race Heats Up": 54, "Ukraine says a political ally of Putin has been detained in a \u2018special operation.\u2019": 21, "Boris Johnson Fined for Breaking U.K. Lockdown Rules": 205, "The world surpasses half a billion known coronavirus cases, amid concerns about testing.": 34, "An Angry Public Wants Sri Lanka\u2019s President Gone": 62, "A German State Is Last in Almost Everything. But It\u2019s No. 1 in Vaccines.": 52, "From the U.S. to China: A 3-Month Quarantine Horror Story": 53, "Name, phone, address: The writing on a child\u2019s back is now a symbol of Ukrainian parents\u2019 terror.": 47}, "Name, phone, address: The writing on a child\u2019s back is now a symbol of Ukrainian parents\u2019 terror.": {"This Beach in Mexico Is an L.G.B.T.Q. Haven. But Can It Last?": 69, "Macron and Le Pen Trade Jabs and Lean Left as French Race Heats Up": 66, "Ukraine says a political ally of Putin has been detained in a \u2018special operation.\u2019": 30, "Boris Johnson Fined for Breaking U.K. Lockdown Rules": 70, "The world surpasses half a billion known coronavirus cases, amid concerns about testing.": 45, "An Angry Public Wants Sri Lanka\u2019s President Gone": 75, "A German State Is Last in Almost Everything. But It\u2019s No. 1 in Vaccines.": 75, "From the U.S. to China: A 3-Month Quarantine Horror Story": 79, "Boris Johnson is fined for breaking British lockdown rules.": 47}}'
+        let min_max = JSON.parse('{"max": 205, "min": 17}')
+        
+        let min = min_max['min']
+        let max = min_max['max']
+
+        // some tests
+        // console.log(min)
+
+        let data = JSON.parse(data_0)
+        let headlines_ie_keys = Object.keys(data);
+
+        // console.log('Data.type')
+        // console.log(typeof(data));
+        // // object
+
+        // console.log('\nData[0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]);
+        // // the whole dictionary
+
+        // console.log('\nData[0][0].type')
+        // console.log(typeof(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]));
+        // // number
+
+        // console.log('\nData[0][0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]);
+        // // 96
+
+        // console.log('\nKeys: type, key[1], and headlines_ie_keys.length')
+        // console.log(typeof(headlines_ie_keys));
+        // // object
+        // console.log(headlines_ie_keys[1]);
+        // // Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years
+
+        // console.log(headlines_ie_keys.length);
+        // // 10
+
+
+
+
+        // P5 Section
+
+
+
+
+
+        let x_feeds = []
+        let y_feeds = []
+        let x_offsets = []
+        let y_offsets = []
+        let headlines_to_show = []
+        let starting_pt, h;
+        let whole_h
+        let stroke_weight
+        let weights_keys
+
+
+        function setup() {
+            starting_pt = 400;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight;
+
+            // canvas = createCanvas(document.body.clientWidth+(16), document.body.scrollHeight);
+            if(h > whole_h){
+                canvas = createCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                canvas = createCanvas(windowWidth, 1.1*whole_h);
+            };
+
+
+            canvas.position(0, 0);
+            canvas.style('z-index', '-1');
+            // console.log(data.headline);
+            // console.log('hi')
+
+            textFont('prestige-elite-std')
+
+            for(i=0; i < headlines_ie_keys.length; i++){
+
+                x_offsets[i] = random(0, 0.001);
+                y_offsets[i] = random(0, 0.001);
+
+                x_feeds[i] = random(0, 100);
+                y_feeds[i] = random(0, 500);
+
+                headlines_to_show[i] = new Headline(String(headlines_ie_keys[i]), x_offsets[i], y_offsets[i], x_feeds[i], y_feeds[i]);
+
+            };
+        };
+
+        function windowResized() {
+
+            starting_pt = 300;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight
+
+            if(h > whole_h){
+                resizeCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                resizeCanvas(windowWidth, 1.1*whole_h);
+            };    // canvas.style('width', windowWidth);
+            // canvas.style('height', document.body.scrollHeight);
+
+        };
+
+
+        class Headline{
+
+            constructor(_string, _x_offset, _y_offset, _x_feed, _y_feed){
+                this._string = _string;
+                this.x_offset = _x_offset;
+                this.y_offset = _y_offset;
+                this.x_feed = _x_feed;
+                this.y_feed = _y_feed;
+                this.x;
+                this.y;
+            };
+
+            show(){
+                this.place_and_move()
+                text(this._string, this.x, this.y, 200, 500);
+            };
+            place_and_move(){
+                this.x = map(noise(this.x_feed), 0, 1, starting_pt, windowWidth);
+                this.y = map(noise(this.y_feed), 0, 1, 0, windowHeight);
+                this.x_feed += this.x_offset;
+                this.y_feed += this.y_offset;
+            };
+        }
+
+        function draw(){
+
+            background(0);
+
+            rect(0, 0, 500, canvas.height)
+
+            noStroke();
+
+            push()
+            textSize(30)
+            fill(150, 42, 46)
+            text('Headlines of the Day', windowWidth/2, 100)
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                textStyle(BOLD);
+                textSize(16)
+                headlines_to_show[i].show();
+
+            };
+            pop()
+
+            push()
+            strokeCap(SQUARE);
+            stroke(150, 42, 46, 30);
+            fill(150, 42, 46, 30);
+
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                weights_keys = Object.keys(data[String(headlines_ie_keys[i])])
+
+                for(u=0; u<weights_keys.length; u++){
+                    push()
+                    stroke_weight = map(data[headlines_ie_keys[i]][weights_keys[u]], min, max, 1, 10)
+                    strokeWeight(stroke_weight)
+                    line(headlines_to_show[i].x-20, headlines_to_show[i].y, headlines_to_show[u].x-20, headlines_to_show[u].y)
+                    pop()
+                }
+                circle(headlines_to_show[i].x-20, headlines_to_show[i].y, 20)
+            };
+            pop()
+            // separated because if together, there would be no x or y for
+            // headlines_to_show[u]
+
+        };
+
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id='left_side'>
+            <h1>Concrete Poetry<br>&emsp;&emsp;&emsp;of Modern Love</h1>
+            <a id="back" href="index.html">&#8592; back</a>
+            <br><br>
+            <h2>We Never Asked; He Never Explained</h2>
+            <br><br>
+            <div id='txt'><p>&emsp;I<br>&emsp;&emsp;&emsp;inherited&emsp;&emsp;nostalgia&emsp;&emsp;&emsp;from&emsp;&emsp;my&emsp;&emsp;&emsp;father.&emsp;&emsp;On&emsp;&emsp;weekends&emsp;in&emsp;&emsp;Brooklyn,&emsp;he&emsp;&emsp;&emsp;would&emsp;&emsp;&emsp;&emsp;play&emsp;&emsp;&emsp;&emsp;his&emsp;&emsp;&emsp;78&emsp;&emsp;rpm&emsp;&emsp;Ansonia&emsp;&emsp;records,&emsp;drink&emsp;&emsp;beer&emsp;and&emsp;look<br>&emsp;&emsp;&emsp;&emsp;forlorn.&emsp;He’d&emsp;&emsp;lose&emsp;&emsp;himself&emsp;&emsp;in&emsp;&emsp;&emsp;&emsp;lyrics&emsp;&emsp;about&emsp;&emsp;&emsp;“los&emsp;jíbaros&emsp;&emsp;de&emsp;&emsp;las&emsp;montañas,”&emsp;&emsp;the&emsp;&emsp;&emsp;&emsp;noble&emsp;farmers<br>&emsp;&emsp;of&emsp;the&emsp;&emsp;&emsp;mountains.&emsp;Humility&emsp;&emsp;and&emsp;&emsp;&emsp;&emsp;&emsp;dreams<br>&emsp;&emsp;would&emsp;&emsp;float&emsp;&emsp;&emsp;&emsp;through&emsp;&emsp;&emsp;&emsp;&emsp;the&emsp;air&emsp;&emsp;while&emsp;&emsp;&emsp;&emsp;my&emsp;&emsp;&emsp;&emsp;sisters&emsp;and&emsp;&emsp;&emsp;I&emsp;&emsp;&emsp;rolled&emsp;our&emsp;&emsp;&emsp;eyes;&emsp;we&emsp;&emsp;couldn’t&emsp;&emsp;relate&emsp;&emsp;&emsp;to&emsp;&emsp;&emsp;&emsp;music&emsp;&emsp;about&emsp;&emsp;Puerto&emsp;Rico’s&emsp;&emsp;countryside.&emsp;&emsp;&emsp;&emsp;Once,&emsp;I&emsp;&emsp;&emsp;came&emsp;&emsp;home&emsp;&emsp;to&emsp;&emsp;my&emsp;father&emsp;&emsp;&emsp;&emsp;&emsp;sitting<br>&emsp;&emsp;&emsp;on&emsp;&emsp;&emsp;the<br>&emsp;&emsp;sofa,&emsp;&emsp;&emsp;&emsp;his&emsp;&emsp;records&emsp;strewn&emsp;&emsp;about,&emsp;cracked&emsp;&emsp;&emsp;into&emsp;&emsp;&emsp;pieces.&emsp;We&emsp;never&emsp;&emsp;&emsp;asked;&emsp;&emsp;he&emsp;never&emsp;explained.&emsp;The&emsp;fissures<br>&emsp;&emsp;remain.&emsp;&emsp;I<br>&emsp;&emsp;&emsp;&emsp;long&emsp;&emsp;to&emsp;hear&emsp;those&emsp;&emsp;songs.&emsp;&emsp;—&emsp;Sonia&emsp;&emsp;&emsp;&emsp;Pérez</p></div>
+        </div>
+    </main>
+</body>

@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/cjy3rtu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Concrete Poetry of Modern Love: It’s Hard to Tell Family About Sex, Love or Money</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    <script>
+        let data_0 = '{"On a trip shrouded in secrecy, 3 European leaders travel to Kyiv to offer support.": {"Officials in Mariupol struggle to account for the dead.": 74, "The U.K. targets more oligarchs and Putin allies with sanctions.": 39, "Impunity for War Crimes in Syria Casts a Grim Shadow Over Ukraine": 89, "A Chinese video blogger in Odessa challenges Beijing\u2019s version of the war.": 54, "Biden will travel to Europe next week for an extraordinary NATO meeting.": 79, "\u2018I\u2019m Not Scared of Anything\u2019: Death and Defiance in a Besieged Ukrainian City": 139, "Indian Court Upholds Ban on Hijabs in Schools": 63, "Here are the latest developments in Ukraine.": 48, "Zelensky calls on Russian troops to surrender.": 53}, "Officials in Mariupol struggle to account for the dead.": {"On a trip shrouded in secrecy, 3 European leaders travel to Kyiv to offer support.": 74, "The U.K. targets more oligarchs and Putin allies with sanctions.": 32, "Impunity for War Crimes in Syria Casts a Grim Shadow Over Ukraine": 77, "A Chinese video blogger in Odessa challenges Beijing\u2019s version of the war.": 47, "Biden will travel to Europe next week for an extraordinary NATO meeting.": 48, "\u2018I\u2019m Not Scared of Anything\u2019: Death and Defiance in a Besieged Ukrainian City": 126, "Indian Court Upholds Ban on Hijabs in Schools": 58, "Here are the latest developments in Ukraine.": 29, "Zelensky calls on Russian troops to surrender.": 50}, "The U.K. targets more oligarchs and Putin allies with sanctions.": {"On a trip shrouded in secrecy, 3 European leaders travel to Kyiv to offer support.": 39, "Officials in Mariupol struggle to account for the dead.": 32, "Impunity for War Crimes in Syria Casts a Grim Shadow Over Ukraine": 44, "A Chinese video blogger in Odessa challenges Beijing\u2019s version of the war.": 26, "Biden will travel to Europe next week for an extraordinary NATO meeting.": 42, "\u2018I\u2019m Not Scared of Anything\u2019: Death and Defiance in a Besieged Ukrainian City": 49, "Indian Court Upholds Ban on Hijabs in Schools": 39, "Here are the latest developments in Ukraine.": 17, "Zelensky calls on Russian troops to surrender.": 26}, "Impunity for War Crimes in Syria Casts a Grim Shadow Over Ukraine": {"On a trip shrouded in secrecy, 3 European leaders travel to Kyiv to offer support.": 89, "Officials in Mariupol struggle to account for the dead.": 77, "The U.K. targets more oligarchs and Putin allies with sanctions.": 44, "A Chinese video blogger in Odessa challenges Beijing\u2019s version of the war.": 65, "Biden will travel to Europe next week for an extraordinary NATO meeting.": 82, "\u2018I\u2019m Not Scared of Anything\u2019: Death and Defiance in a Besieged Ukrainian City": 169, "Indian Court Upholds Ban on Hijabs in Schools": 68, "Here are the latest developments in Ukraine.": 31, "Zelensky calls on Russian troops to surrender.": 66}, "A Chinese video blogger in Odessa challenges Beijing\u2019s version of the war.": {"On a trip shrouded in secrecy, 3 European leaders travel to Kyiv to offer support.": 54, "Officials in Mariupol struggle to account for the dead.": 47, "The U.K. targets more oligarchs and Putin allies with sanctions.": 26, "Impunity for War Crimes in Syria Casts a Grim Shadow Over Ukraine": 65, "Biden will travel to Europe next week for an extraordinary NATO meeting.": 40, "\u2018I\u2019m Not Scared of Anything\u2019: Death and Defiance in a Besieged Ukrainian City": 93, "Indian Court Upholds Ban on Hijabs in Schools": 47, "Here are the latest developments in Ukraine.": 17, "Zelensky calls on Russian troops to surrender.": 34}, "Biden will travel to Europe next week for an extraordinary NATO meeting.": {"On a trip shrouded in secrecy, 3 European leaders travel to Kyiv to offer support.": 79, "Officials in Mariupol struggle to account for the dead.": 48, "The U.K. targets more oligarchs and Putin allies with sanctions.": 42, "Impunity for War Crimes in Syria Casts a Grim Shadow Over Ukraine": 82, "A Chinese video blogger in Odessa challenges Beijing\u2019s version of the war.": 40, "\u2018I\u2019m Not Scared of Anything\u2019: Death and Defiance in a Besieged Ukrainian City": 92, "Indian Court Upholds Ban on Hijabs in Schools": 43, "Here are the latest developments in Ukraine.": 32, "Zelensky calls on Russian troops to surrender.": 34}, "\u2018I\u2019m Not Scared of Anything\u2019: Death and Defiance in a Besieged Ukrainian City": {"On a trip shrouded in secrecy, 3 European leaders travel to Kyiv to offer support.": 139, "Officials in Mariupol struggle to account for the dead.": 126, "The U.K. targets more oligarchs and Putin allies with sanctions.": 49, "Impunity for War Crimes in Syria Casts a Grim Shadow Over Ukraine": 169, "A Chinese video blogger in Odessa challenges Beijing\u2019s version of the war.": 93, "Biden will travel to Europe next week for an extraordinary NATO meeting.": 92, "Indian Court Upholds Ban on Hijabs in Schools": 96, "Here are the latest developments in Ukraine.": 44, "Zelensky calls on Russian troops to surrender.": 91}, "Indian Court Upholds Ban on Hijabs in Schools": {"On a trip shrouded in secrecy, 3 European leaders travel to Kyiv to offer support.": 63, "Officials in Mariupol struggle to account for the dead.": 58, "The U.K. targets more oligarchs and Putin allies with sanctions.": 39, "Impunity for War Crimes in Syria Casts a Grim Shadow Over Ukraine": 68, "A Chinese video blogger in Odessa challenges Beijing\u2019s version of the war.": 47, "Biden will travel to Europe next week for an extraordinary NATO meeting.": 43, "\u2018I\u2019m Not Scared of Anything\u2019: Death and Defiance in a Besieged Ukrainian City": 96, "Here are the latest developments in Ukraine.": 20, "Zelensky calls on Russian troops to surrender.": 45}, "Here are the latest developments in Ukraine.": {"On a trip shrouded in secrecy, 3 European leaders travel to Kyiv to offer support.": 48, "Officials in Mariupol struggle to account for the dead.": 29, "The U.K. targets more oligarchs and Putin allies with sanctions.": 17, "Impunity for War Crimes in Syria Casts a Grim Shadow Over Ukraine": 31, "A Chinese video blogger in Odessa challenges Beijing\u2019s version of the war.": 17, "Biden will travel to Europe next week for an extraordinary NATO meeting.": 32, "\u2018I\u2019m Not Scared of Anything\u2019: Death and Defiance in a Besieged Ukrainian City": 44, "Indian Court Upholds Ban on Hijabs in Schools": 20, "Zelensky calls on Russian troops to surrender.": 36}, "Zelensky calls on Russian troops to surrender.": {"On a trip shrouded in secrecy, 3 European leaders travel to Kyiv to offer support.": 53, "Officials in Mariupol struggle to account for the dead.": 50, "The U.K. targets more oligarchs and Putin allies with sanctions.": 26, "Impunity for War Crimes in Syria Casts a Grim Shadow Over Ukraine": 66, "A Chinese video blogger in Odessa challenges Beijing\u2019s version of the war.": 34, "Biden will travel to Europe next week for an extraordinary NATO meeting.": 34, "\u2018I\u2019m Not Scared of Anything\u2019: Death and Defiance in a Besieged Ukrainian City": 91, "Indian Court Upholds Ban on Hijabs in Schools": 45, "Here are the latest developments in Ukraine.": 36}}'
+        let min_max = JSON.parse('{"max": 169, "min": 17}')
+        
+        let min = min_max['min']
+        let max = min_max['max']
+
+        // some tests
+        // console.log(min)
+
+        let data = JSON.parse(data_0)
+        let headlines_ie_keys = Object.keys(data);
+
+        // console.log('Data.type')
+        // console.log(typeof(data));
+        // // object
+
+        // console.log('\nData[0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]);
+        // // the whole dictionary
+
+        // console.log('\nData[0][0].type')
+        // console.log(typeof(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]));
+        // // number
+
+        // console.log('\nData[0][0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]);
+        // // 96
+
+        // console.log('\nKeys: type, key[1], and headlines_ie_keys.length')
+        // console.log(typeof(headlines_ie_keys));
+        // // object
+        // console.log(headlines_ie_keys[1]);
+        // // Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years
+
+        // console.log(headlines_ie_keys.length);
+        // // 10
+
+
+
+
+        // P5 Section
+
+
+
+
+
+        let x_feeds = []
+        let y_feeds = []
+        let x_offsets = []
+        let y_offsets = []
+        let headlines_to_show = []
+        let starting_pt, h;
+        let whole_h
+        let stroke_weight
+        let weights_keys
+
+
+        function setup() {
+            starting_pt = 400;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight;
+
+            // canvas = createCanvas(document.body.clientWidth+(16), document.body.scrollHeight);
+            if(h > whole_h){
+                canvas = createCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                canvas = createCanvas(windowWidth, 1.1*whole_h);
+            };
+
+
+            canvas.position(0, 0);
+            canvas.style('z-index', '-1');
+            // console.log(data.headline);
+            // console.log('hi')
+
+            textFont('prestige-elite-std')
+
+            for(i=0; i < headlines_ie_keys.length; i++){
+
+                x_offsets[i] = random(0, 0.001);
+                y_offsets[i] = random(0, 0.001);
+
+                x_feeds[i] = random(0, 100);
+                y_feeds[i] = random(0, 500);
+
+                headlines_to_show[i] = new Headline(String(headlines_ie_keys[i]), x_offsets[i], y_offsets[i], x_feeds[i], y_feeds[i]);
+
+            };
+        };
+
+        function windowResized() {
+
+            starting_pt = 300;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight
+
+            if(h > whole_h){
+                resizeCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                resizeCanvas(windowWidth, 1.1*whole_h);
+            };    // canvas.style('width', windowWidth);
+            // canvas.style('height', document.body.scrollHeight);
+
+        };
+
+
+        class Headline{
+
+            constructor(_string, _x_offset, _y_offset, _x_feed, _y_feed){
+                this._string = _string;
+                this.x_offset = _x_offset;
+                this.y_offset = _y_offset;
+                this.x_feed = _x_feed;
+                this.y_feed = _y_feed;
+                this.x;
+                this.y;
+            };
+
+            show(){
+                this.place_and_move()
+                text(this._string, this.x, this.y, 200, 500);
+            };
+            place_and_move(){
+                this.x = map(noise(this.x_feed), 0, 1, starting_pt, windowWidth);
+                this.y = map(noise(this.y_feed), 0, 1, 0, windowHeight);
+                this.x_feed += this.x_offset;
+                this.y_feed += this.y_offset;
+            };
+        }
+
+        function draw(){
+
+            background(0);
+
+            rect(0, 0, 500, canvas.height)
+
+            noStroke();
+
+            push()
+            textSize(30)
+            fill(150, 42, 46)
+            text('Headlines of the Day', windowWidth/2, 100)
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                textStyle(BOLD);
+                textSize(16)
+                headlines_to_show[i].show();
+
+            };
+            pop()
+
+            push()
+            strokeCap(SQUARE);
+            stroke(150, 42, 46, 30);
+            fill(150, 42, 46, 30);
+
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                weights_keys = Object.keys(data[String(headlines_ie_keys[i])])
+
+                for(u=0; u<weights_keys.length; u++){
+                    push()
+                    stroke_weight = map(data[headlines_ie_keys[i]][weights_keys[u]], min, max, 1, 10)
+                    strokeWeight(stroke_weight)
+                    line(headlines_to_show[i].x-20, headlines_to_show[i].y, headlines_to_show[u].x-20, headlines_to_show[u].y)
+                    pop()
+                }
+                circle(headlines_to_show[i].x-20, headlines_to_show[i].y, 20)
+            };
+            pop()
+            // separated because if together, there would be no x or y for
+            // headlines_to_show[u]
+
+        };
+
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id='left_side'>
+            <h1>Concrete Poetry<br>&emsp;&emsp;&emsp;of Modern Love</h1>
+            <a id="back" href="index.html">&#8592; back</a>
+            <br><br>
+            <h2>It’s Hard to Tell Family About Sex, Love or Money</h2>
+            <br><br>
+            <div id='txt'><p>&emsp;&emsp;&emsp;I&emsp;&emsp;&emsp;met&emsp;&emsp;Andy&emsp;the&emsp;&emsp;first&emsp;&emsp;day&emsp;of&emsp;&emsp;college.&emsp;He&emsp;&emsp;&emsp;&emsp;was&emsp;&emsp;&emsp;the&emsp;&emsp;funniest,&emsp;&emsp;strongest&emsp;&emsp;&emsp;and&emsp;&emsp;&emsp;most&emsp;&emsp;outgoing&emsp;&emsp;person&emsp;at&emsp;&emsp;&emsp;school.&emsp;&emsp;The<br>&emsp;&emsp;&emsp;kind<br>&emsp;&emsp;&emsp;&emsp;of&emsp;&emsp;guy&emsp;&emsp;&emsp;&emsp;an&emsp;only&emsp;child<br>&emsp;&emsp;like&emsp;me<br>&emsp;would&emsp;&emsp;&emsp;&emsp;&emsp;want&emsp;&emsp;as&emsp;a&emsp;&emsp;brother.&emsp;&emsp;He<br>&emsp;&emsp;&emsp;&emsp;rushed&emsp;&emsp;&emsp;into&emsp;&emsp;&emsp;&emsp;my&emsp;&emsp;&emsp;room&emsp;after&emsp;&emsp;Thanksgiving&emsp;&emsp;break,&emsp;&emsp;&emsp;&emsp;produced&emsp;&emsp;&emsp;&emsp;a&emsp;notepad&emsp;&emsp;&emsp;scribbled<br>&emsp;&emsp;&emsp;with&emsp;&emsp;boxes&emsp;&emsp;and&emsp;&emsp;arrows&emsp;&emsp;&emsp;and&emsp;&emsp;&emsp;said,&emsp;&emsp;“I&emsp;&emsp;&emsp;&emsp;told&emsp;my<br>&emsp;&emsp;mom&emsp;&emsp;&emsp;&emsp;about&emsp;&emsp;you.&emsp;&emsp;We’re&emsp;&emsp;related!”&emsp;&emsp;(My<br>&emsp;&emsp;&emsp;grandfather’s&emsp;&emsp;&emsp;first&emsp;cousin&emsp;&emsp;&emsp;had&emsp;married&emsp;&emsp;Andy’s&emsp;&emsp;&emsp;&emsp;great-aunt.)&emsp;It’s&emsp;&emsp;&emsp;&emsp;hard&emsp;&emsp;to&emsp;&emsp;&emsp;tell&emsp;&emsp;family<br>&emsp;&emsp;&emsp;about&emsp;sex,&emsp;&emsp;&emsp;&emsp;love&emsp;&emsp;&emsp;or&emsp;&emsp;money,&emsp;&emsp;so&emsp;&emsp;I<br>&emsp;&emsp;&emsp;tell&emsp;&emsp;&emsp;&emsp;Andy&emsp;&emsp;&emsp;—&emsp;&emsp;&emsp;as&emsp;&emsp;a&emsp;&emsp;&emsp;friend.&emsp;&emsp;&emsp;It’s&emsp;&emsp;&emsp;hard&emsp;to&emsp;tell&emsp;a&emsp;&emsp;friend<br>&emsp;you&emsp;love<br>&emsp;&emsp;&emsp;&emsp;him,&emsp;&emsp;&emsp;&emsp;so&emsp;&emsp;&emsp;&emsp;&emsp;I&emsp;&emsp;&emsp;&emsp;tell&emsp;Andy&emsp;—&emsp;&emsp;as&emsp;family.&emsp;&emsp;&emsp;—&emsp;Matthew&emsp;&emsp;&emsp;Morchower</p></div>
+        </div>
+    </main>
+</body>

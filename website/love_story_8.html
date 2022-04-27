@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/cjy3rtu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Concrete Poetry of Modern Love: So Fragile I Had to Look Away</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    <script>
+        let data_0 = '{"Satellite internet terminals, sent by Elon Musk, arrive in Ukraine.": {"\u2018My Cousins Are Killing One Another\u2019: War in Ukraine Splits Mixed Families": 39, "Palestinians Threatened With Eviction Can Stay in Their Homes \u2014 for Now": 38, "Second Worker Strike This Week Shuts Down London Underground": 38, "U.K. Moves to Tighten Laws on Oligarchs. Critics Say It\u2019s Too Late.": 51, "A Surge of Unifying Moral Outrage Over Russia\u2019s War": 57, "Why Ukraine\u2019s road to European Union membership will likely be long and winding.": 38, "U.S. schools are back in person, but many children aren\u2019t back to full time.": 28, "Some Russian troops are surrendering or sabotaging vehicles rather than fighting, a Pentagon official says.": 32, "Africans Say Ukrainian Authorities Hindered Them From Fleeing": 46}, "\u2018My Cousins Are Killing One Another\u2019: War in Ukraine Splits Mixed Families": {"Satellite internet terminals, sent by Elon Musk, arrive in Ukraine.": 39, "Palestinians Threatened With Eviction Can Stay in Their Homes \u2014 for Now": 68, "Second Worker Strike This Week Shuts Down London Underground": 53, "U.K. Moves to Tighten Laws on Oligarchs. Critics Say It\u2019s Too Late.": 90, "A Surge of Unifying Moral Outrage Over Russia\u2019s War": 104, "Why Ukraine\u2019s road to European Union membership will likely be long and winding.": 55, "U.S. schools are back in person, but many children aren\u2019t back to full time.": 53, "Some Russian troops are surrendering or sabotaging vehicles rather than fighting, a Pentagon official says.": 54, "Africans Say Ukrainian Authorities Hindered Them From Fleeing": 89}, "Palestinians Threatened With Eviction Can Stay in Their Homes \u2014 for Now": {"Satellite internet terminals, sent by Elon Musk, arrive in Ukraine.": 38, "\u2018My Cousins Are Killing One Another\u2019: War in Ukraine Splits Mixed Families": 68, "Second Worker Strike This Week Shuts Down London Underground": 60, "U.K. Moves to Tighten Laws on Oligarchs. Critics Say It\u2019s Too Late.": 92, "A Surge of Unifying Moral Outrage Over Russia\u2019s War": 89, "Why Ukraine\u2019s road to European Union membership will likely be long and winding.": 58, "U.S. schools are back in person, but many children aren\u2019t back to full time.": 44, "Some Russian troops are surrendering or sabotaging vehicles rather than fighting, a Pentagon official says.": 47, "Africans Say Ukrainian Authorities Hindered Them From Fleeing": 83}, "Second Worker Strike This Week Shuts Down London Underground": {"Satellite internet terminals, sent by Elon Musk, arrive in Ukraine.": 38, "\u2018My Cousins Are Killing One Another\u2019: War in Ukraine Splits Mixed Families": 53, "Palestinians Threatened With Eviction Can Stay in Their Homes \u2014 for Now": 60, "U.K. Moves to Tighten Laws on Oligarchs. Critics Say It\u2019s Too Late.": 79, "A Surge of Unifying Moral Outrage Over Russia\u2019s War": 72, "Why Ukraine\u2019s road to European Union membership will likely be long and winding.": 50, "U.S. schools are back in person, but many children aren\u2019t back to full time.": 56, "Some Russian troops are surrendering or sabotaging vehicles rather than fighting, a Pentagon official says.": 48, "Africans Say Ukrainian Authorities Hindered Them From Fleeing": 71}, "U.K. Moves to Tighten Laws on Oligarchs. Critics Say It\u2019s Too Late.": {"Satellite internet terminals, sent by Elon Musk, arrive in Ukraine.": 51, "\u2018My Cousins Are Killing One Another\u2019: War in Ukraine Splits Mixed Families": 90, "Palestinians Threatened With Eviction Can Stay in Their Homes \u2014 for Now": 92, "Second Worker Strike This Week Shuts Down London Underground": 79, "A Surge of Unifying Moral Outrage Over Russia\u2019s War": 126, "Why Ukraine\u2019s road to European Union membership will likely be long and winding.": 79, "U.S. schools are back in person, but many children aren\u2019t back to full time.": 60, "Some Russian troops are surrendering or sabotaging vehicles rather than fighting, a Pentagon official says.": 69, "Africans Say Ukrainian Authorities Hindered Them From Fleeing": 97}, "A Surge of Unifying Moral Outrage Over Russia\u2019s War": {"Satellite internet terminals, sent by Elon Musk, arrive in Ukraine.": 57, "\u2018My Cousins Are Killing One Another\u2019: War in Ukraine Splits Mixed Families": 104, "Palestinians Threatened With Eviction Can Stay in Their Homes \u2014 for Now": 89, "Second Worker Strike This Week Shuts Down London Underground": 72, "U.K. Moves to Tighten Laws on Oligarchs. Critics Say It\u2019s Too Late.": 126, "Why Ukraine\u2019s road to European Union membership will likely be long and winding.": 90, "U.S. schools are back in person, but many children aren\u2019t back to full time.": 59, "Some Russian troops are surrendering or sabotaging vehicles rather than fighting, a Pentagon official says.": 64, "Africans Say Ukrainian Authorities Hindered Them From Fleeing": 111}, "Why Ukraine\u2019s road to European Union membership will likely be long and winding.": {"Satellite internet terminals, sent by Elon Musk, arrive in Ukraine.": 38, "\u2018My Cousins Are Killing One Another\u2019: War in Ukraine Splits Mixed Families": 55, "Palestinians Threatened With Eviction Can Stay in Their Homes \u2014 for Now": 58, "Second Worker Strike This Week Shuts Down London Underground": 50, "U.K. Moves to Tighten Laws on Oligarchs. Critics Say It\u2019s Too Late.": 79, "A Surge of Unifying Moral Outrage Over Russia\u2019s War": 90, "U.S. schools are back in person, but many children aren\u2019t back to full time.": 37, "Some Russian troops are surrendering or sabotaging vehicles rather than fighting, a Pentagon official says.": 43, "Africans Say Ukrainian Authorities Hindered Them From Fleeing": 81}, "U.S. schools are back in person, but many children aren\u2019t back to full time.": {"Satellite internet terminals, sent by Elon Musk, arrive in Ukraine.": 28, "\u2018My Cousins Are Killing One Another\u2019: War in Ukraine Splits Mixed Families": 53, "Palestinians Threatened With Eviction Can Stay in Their Homes \u2014 for Now": 44, "Second Worker Strike This Week Shuts Down London Underground": 56, "U.K. Moves to Tighten Laws on Oligarchs. Critics Say It\u2019s Too Late.": 60, "A Surge of Unifying Moral Outrage Over Russia\u2019s War": 59, "Why Ukraine\u2019s road to European Union membership will likely be long and winding.": 37, "Some Russian troops are surrendering or sabotaging vehicles rather than fighting, a Pentagon official says.": 38, "Africans Say Ukrainian Authorities Hindered Them From Fleeing": 58}, "Some Russian troops are surrendering or sabotaging vehicles rather than fighting, a Pentagon official says.": {"Satellite internet terminals, sent by Elon Musk, arrive in Ukraine.": 32, "\u2018My Cousins Are Killing One Another\u2019: War in Ukraine Splits Mixed Families": 54, "Palestinians Threatened With Eviction Can Stay in Their Homes \u2014 for Now": 47, "Second Worker Strike This Week Shuts Down London Underground": 48, "U.K. Moves to Tighten Laws on Oligarchs. Critics Say It\u2019s Too Late.": 69, "A Surge of Unifying Moral Outrage Over Russia\u2019s War": 64, "Why Ukraine\u2019s road to European Union membership will likely be long and winding.": 43, "U.S. schools are back in person, but many children aren\u2019t back to full time.": 38, "Africans Say Ukrainian Authorities Hindered Them From Fleeing": 63}, "Africans Say Ukrainian Authorities Hindered Them From Fleeing": {"Satellite internet terminals, sent by Elon Musk, arrive in Ukraine.": 46, "\u2018My Cousins Are Killing One Another\u2019: War in Ukraine Splits Mixed Families": 89, "Palestinians Threatened With Eviction Can Stay in Their Homes \u2014 for Now": 83, "Second Worker Strike This Week Shuts Down London Underground": 71, "U.K. Moves to Tighten Laws on Oligarchs. Critics Say It\u2019s Too Late.": 97, "A Surge of Unifying Moral Outrage Over Russia\u2019s War": 111, "Why Ukraine\u2019s road to European Union membership will likely be long and winding.": 81, "U.S. schools are back in person, but many children aren\u2019t back to full time.": 58, "Some Russian troops are surrendering or sabotaging vehicles rather than fighting, a Pentagon official says.": 63}}'
+        let min_max = JSON.parse('{"max": 126, "min": 28}')
+        
+        let min = min_max['min']
+        let max = min_max['max']
+
+        // some tests
+        // console.log(min)
+
+        let data = JSON.parse(data_0)
+        let headlines_ie_keys = Object.keys(data);
+
+        // console.log('Data.type')
+        // console.log(typeof(data));
+        // // object
+
+        // console.log('\nData[0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]);
+        // // the whole dictionary
+
+        // console.log('\nData[0][0].type')
+        // console.log(typeof(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]));
+        // // number
+
+        // console.log('\nData[0][0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]);
+        // // 96
+
+        // console.log('\nKeys: type, key[1], and headlines_ie_keys.length')
+        // console.log(typeof(headlines_ie_keys));
+        // // object
+        // console.log(headlines_ie_keys[1]);
+        // // Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years
+
+        // console.log(headlines_ie_keys.length);
+        // // 10
+
+
+
+
+        // P5 Section
+
+
+
+
+
+        let x_feeds = []
+        let y_feeds = []
+        let x_offsets = []
+        let y_offsets = []
+        let headlines_to_show = []
+        let starting_pt, h;
+        let whole_h
+        let stroke_weight
+        let weights_keys
+
+
+        function setup() {
+            starting_pt = 400;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight;
+
+            // canvas = createCanvas(document.body.clientWidth+(16), document.body.scrollHeight);
+            if(h > whole_h){
+                canvas = createCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                canvas = createCanvas(windowWidth, 1.1*whole_h);
+            };
+
+
+            canvas.position(0, 0);
+            canvas.style('z-index', '-1');
+            // console.log(data.headline);
+            // console.log('hi')
+
+            textFont('prestige-elite-std')
+
+            for(i=0; i < headlines_ie_keys.length; i++){
+
+                x_offsets[i] = random(0, 0.001);
+                y_offsets[i] = random(0, 0.001);
+
+                x_feeds[i] = random(0, 100);
+                y_feeds[i] = random(0, 500);
+
+                headlines_to_show[i] = new Headline(String(headlines_ie_keys[i]), x_offsets[i], y_offsets[i], x_feeds[i], y_feeds[i]);
+
+            };
+        };
+
+        function windowResized() {
+
+            starting_pt = 300;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight
+
+            if(h > whole_h){
+                resizeCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                resizeCanvas(windowWidth, 1.1*whole_h);
+            };    // canvas.style('width', windowWidth);
+            // canvas.style('height', document.body.scrollHeight);
+
+        };
+
+
+        class Headline{
+
+            constructor(_string, _x_offset, _y_offset, _x_feed, _y_feed){
+                this._string = _string;
+                this.x_offset = _x_offset;
+                this.y_offset = _y_offset;
+                this.x_feed = _x_feed;
+                this.y_feed = _y_feed;
+                this.x;
+                this.y;
+            };
+
+            show(){
+                this.place_and_move()
+                text(this._string, this.x, this.y, 200, 500);
+            };
+            place_and_move(){
+                this.x = map(noise(this.x_feed), 0, 1, starting_pt, windowWidth);
+                this.y = map(noise(this.y_feed), 0, 1, 0, windowHeight);
+                this.x_feed += this.x_offset;
+                this.y_feed += this.y_offset;
+            };
+        }
+
+        function draw(){
+
+            background(0);
+
+            rect(0, 0, 500, canvas.height)
+
+            noStroke();
+
+            push()
+            textSize(30)
+            fill(150, 42, 46)
+            text('Headlines of the Day', windowWidth/2, 100)
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                textStyle(BOLD);
+                textSize(16)
+                headlines_to_show[i].show();
+
+            };
+            pop()
+
+            push()
+            strokeCap(SQUARE);
+            stroke(150, 42, 46, 30);
+            fill(150, 42, 46, 30);
+
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                weights_keys = Object.keys(data[String(headlines_ie_keys[i])])
+
+                for(u=0; u<weights_keys.length; u++){
+                    push()
+                    stroke_weight = map(data[headlines_ie_keys[i]][weights_keys[u]], min, max, 1, 10)
+                    strokeWeight(stroke_weight)
+                    line(headlines_to_show[i].x-20, headlines_to_show[i].y, headlines_to_show[u].x-20, headlines_to_show[u].y)
+                    pop()
+                }
+                circle(headlines_to_show[i].x-20, headlines_to_show[i].y, 20)
+            };
+            pop()
+            // separated because if together, there would be no x or y for
+            // headlines_to_show[u]
+
+        };
+
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id='left_side'>
+            <h1>Concrete Poetry<br>&emsp;&emsp;&emsp;of Modern Love</h1>
+            <a id="back" href="index.html">&#8592; back</a>
+            <br><br>
+            <h2>So Fragile I Had to Look Away</h2>
+            <br><br>
+            <div id='txt'><p>&emsp;&emsp;&emsp;Ambivalent&emsp;&emsp;&emsp;and&emsp;heartbroken,&emsp;&emsp;I&emsp;&emsp;&emsp;broke&emsp;&emsp;up&emsp;&emsp;with&emsp;&emsp;&emsp;&emsp;Jeff,&emsp;&emsp;&emsp;my&emsp;&emsp;&emsp;first&emsp;&emsp;&emsp;love,&emsp;&emsp;as&emsp;&emsp;he&emsp;&emsp;&emsp;entered&emsp;&emsp;medical&emsp;school.&emsp;We&emsp;&emsp;&emsp;&emsp;&emsp;had&emsp;&emsp;&emsp;known&emsp;&emsp;each&emsp;&emsp;&emsp;&emsp;other&emsp;since&emsp;&emsp;&emsp;&emsp;we<br>&emsp;were&emsp;&emsp;13<br>&emsp;&emsp;and&emsp;14.&emsp;&emsp;&emsp;&emsp;Post-split,<br>&emsp;we&emsp;&emsp;&emsp;kept&emsp;&emsp;&emsp;in&emsp;touch.&emsp;When&emsp;my&emsp;&emsp;&emsp;father&emsp;&emsp;died,&emsp;Jeff&emsp;&emsp;&emsp;&emsp;&emsp;showed<br>&emsp;&emsp;up.&emsp;When&emsp;&emsp;my&emsp;&emsp;&emsp;mother&emsp;needed&emsp;&emsp;&emsp;a&emsp;&emsp;&emsp;cardiologist,&emsp;he&emsp;&emsp;&emsp;&emsp;treated<br>&emsp;&emsp;&emsp;&emsp;&emsp;her.&emsp;&emsp;&emsp;&emsp;Eventually&emsp;&emsp;something&emsp;&emsp;scary<br>&emsp;&emsp;&emsp;turned&emsp;&emsp;&emsp;up&emsp;&emsp;on&emsp;my&emsp;own&emsp;&emsp;&emsp;test.&emsp;“Bring&emsp;me&emsp;the&emsp;&emsp;&emsp;&emsp;&emsp;echo,”&emsp;&emsp;he&emsp;&emsp;said,&emsp;&emsp;referring&emsp;&emsp;to&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;an&emsp;&emsp;echocardiogram.&emsp;&emsp;I&emsp;&emsp;&emsp;sat&emsp;beside&emsp;&emsp;him,&emsp;watching&emsp;&emsp;&emsp;a&emsp;&emsp;video&emsp;&emsp;&emsp;of&emsp;&emsp;my&emsp;heart&emsp;&emsp;&emsp;pumping.<br>&emsp;It&emsp;&emsp;seemed&emsp;&emsp;so&emsp;&emsp;&emsp;&emsp;fragile<br>&emsp;&emsp;&emsp;I&emsp;had&emsp;&emsp;to&emsp;&emsp;&emsp;look&emsp;away.&emsp;&emsp;&emsp;&emsp;“Normal&emsp;&emsp;aging,”&emsp;&emsp;&emsp;he&emsp;assured&emsp;&emsp;me.&emsp;My&emsp;&emsp;heart,&emsp;like&emsp;our&emsp;&emsp;friendship,&emsp;&emsp;would<br>&emsp;&emsp;live&emsp;&emsp;&emsp;on.&emsp;&emsp;&emsp;—&emsp;&emsp;Cathy&emsp;Casriel</p></div>
+        </div>
+    </main>
+</body>

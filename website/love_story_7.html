@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/cjy3rtu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Concrete Poetry of Modern Love: I Really Didn’t Want to Hurt Her</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
+    <script>
+        let data_0 = '{"How Maori Stepped In to Save a Towering Tree Crucial to Their Identity": {"Moldovans Welcome Fleeing Ukrainians, but Some Pack Their Own Bags, Too": 86, "For this border crisis, Poles extend a warm welcome, unlike last time.": 73, "Biden bans U.S. imports of Russian oil and natural gas, and Britain vows to phase Russian oil out.": 59, "Battlefield reports are murky, but signs of Ukraine\u2019s successes emerge.": 47, "Moderna opens the door to enforcing its vaccine patents in some countries.": 43, "W.H.O. condemns attacks on health care services in Ukraine and calls for safe passage for medical supplies.": 41, "U.N. Human Rights Chief to Visit China": 48, "A 459-Foot Mystery in a Tuscan Port: Is It a Russian\u2019s Superyacht?": 98, "Ukrainians Trying to Flee to U.K. Face a Confounding Path": 89}, "Moldovans Welcome Fleeing Ukrainians, but Some Pack Their Own Bags, Too": {"How Maori Stepped In to Save a Towering Tree Crucial to Their Identity": 86, "For this border crisis, Poles extend a warm welcome, unlike last time.": 116, "Biden bans U.S. imports of Russian oil and natural gas, and Britain vows to phase Russian oil out.": 88, "Battlefield reports are murky, but signs of Ukraine\u2019s successes emerge.": 60, "Moderna opens the door to enforcing its vaccine patents in some countries.": 45, "W.H.O. condemns attacks on health care services in Ukraine and calls for safe passage for medical supplies.": 59, "U.N. Human Rights Chief to Visit China": 63, "A 459-Foot Mystery in a Tuscan Port: Is It a Russian\u2019s Superyacht?": 119, "Ukrainians Trying to Flee to U.K. Face a Confounding Path": 130}, "For this border crisis, Poles extend a warm welcome, unlike last time.": {"How Maori Stepped In to Save a Towering Tree Crucial to Their Identity": 73, "Moldovans Welcome Fleeing Ukrainians, but Some Pack Their Own Bags, Too": 116, "Biden bans U.S. imports of Russian oil and natural gas, and Britain vows to phase Russian oil out.": 71, "Battlefield reports are murky, but signs of Ukraine\u2019s successes emerge.": 50, "Moderna opens the door to enforcing its vaccine patents in some countries.": 40, "W.H.O. condemns attacks on health care services in Ukraine and calls for safe passage for medical supplies.": 61, "U.N. Human Rights Chief to Visit China": 49, "A 459-Foot Mystery in a Tuscan Port: Is It a Russian\u2019s Superyacht?": 98, "Ukrainians Trying to Flee to U.K. Face a Confounding Path": 120}, "Biden bans U.S. imports of Russian oil and natural gas, and Britain vows to phase Russian oil out.": {"How Maori Stepped In to Save a Towering Tree Crucial to Their Identity": 59, "Moldovans Welcome Fleeing Ukrainians, but Some Pack Their Own Bags, Too": 88, "For this border crisis, Poles extend a warm welcome, unlike last time.": 71, "Battlefield reports are murky, but signs of Ukraine\u2019s successes emerge.": 55, "Moderna opens the door to enforcing its vaccine patents in some countries.": 43, "W.H.O. condemns attacks on health care services in Ukraine and calls for safe passage for medical supplies.": 39, "U.N. Human Rights Chief to Visit China": 57, "A 459-Foot Mystery in a Tuscan Port: Is It a Russian\u2019s Superyacht?": 94, "Ukrainians Trying to Flee to U.K. Face a Confounding Path": 88}, "Battlefield reports are murky, but signs of Ukraine\u2019s successes emerge.": {"How Maori Stepped In to Save a Towering Tree Crucial to Their Identity": 47, "Moldovans Welcome Fleeing Ukrainians, but Some Pack Their Own Bags, Too": 60, "For this border crisis, Poles extend a warm welcome, unlike last time.": 50, "Biden bans U.S. imports of Russian oil and natural gas, and Britain vows to phase Russian oil out.": 55, "Moderna opens the door to enforcing its vaccine patents in some countries.": 26, "W.H.O. condemns attacks on health care services in Ukraine and calls for safe passage for medical supplies.": 37, "U.N. Human Rights Chief to Visit China": 38, "A 459-Foot Mystery in a Tuscan Port: Is It a Russian\u2019s Superyacht?": 77, "Ukrainians Trying to Flee to U.K. Face a Confounding Path": 61}, "Moderna opens the door to enforcing its vaccine patents in some countries.": {"How Maori Stepped In to Save a Towering Tree Crucial to Their Identity": 43, "Moldovans Welcome Fleeing Ukrainians, but Some Pack Their Own Bags, Too": 45, "For this border crisis, Poles extend a warm welcome, unlike last time.": 40, "Biden bans U.S. imports of Russian oil and natural gas, and Britain vows to phase Russian oil out.": 43, "Battlefield reports are murky, but signs of Ukraine\u2019s successes emerge.": 26, "W.H.O. condemns attacks on health care services in Ukraine and calls for safe passage for medical supplies.": 28, "U.N. Human Rights Chief to Visit China": 40, "A 459-Foot Mystery in a Tuscan Port: Is It a Russian\u2019s Superyacht?": 57, "Ukrainians Trying to Flee to U.K. Face a Confounding Path": 41}, "W.H.O. condemns attacks on health care services in Ukraine and calls for safe passage for medical supplies.": {"How Maori Stepped In to Save a Towering Tree Crucial to Their Identity": 41, "Moldovans Welcome Fleeing Ukrainians, but Some Pack Their Own Bags, Too": 59, "For this border crisis, Poles extend a warm welcome, unlike last time.": 61, "Biden bans U.S. imports of Russian oil and natural gas, and Britain vows to phase Russian oil out.": 39, "Battlefield reports are murky, but signs of Ukraine\u2019s successes emerge.": 37, "Moderna opens the door to enforcing its vaccine patents in some countries.": 28, "U.N. Human Rights Chief to Visit China": 32, "A 459-Foot Mystery in a Tuscan Port: Is It a Russian\u2019s Superyacht?": 54, "Ukrainians Trying to Flee to U.K. Face a Confounding Path": 65}, "U.N. Human Rights Chief to Visit China": {"How Maori Stepped In to Save a Towering Tree Crucial to Their Identity": 48, "Moldovans Welcome Fleeing Ukrainians, but Some Pack Their Own Bags, Too": 63, "For this border crisis, Poles extend a warm welcome, unlike last time.": 49, "Biden bans U.S. imports of Russian oil and natural gas, and Britain vows to phase Russian oil out.": 57, "Battlefield reports are murky, but signs of Ukraine\u2019s successes emerge.": 38, "Moderna opens the door to enforcing its vaccine patents in some countries.": 40, "W.H.O. condemns attacks on health care services in Ukraine and calls for safe passage for medical supplies.": 32, "A 459-Foot Mystery in a Tuscan Port: Is It a Russian\u2019s Superyacht?": 70, "Ukrainians Trying to Flee to U.K. Face a Confounding Path": 73}, "A 459-Foot Mystery in a Tuscan Port: Is It a Russian\u2019s Superyacht?": {"How Maori Stepped In to Save a Towering Tree Crucial to Their Identity": 98, "Moldovans Welcome Fleeing Ukrainians, but Some Pack Their Own Bags, Too": 119, "For this border crisis, Poles extend a warm welcome, unlike last time.": 98, "Biden bans U.S. imports of Russian oil and natural gas, and Britain vows to phase Russian oil out.": 94, "Battlefield reports are murky, but signs of Ukraine\u2019s successes emerge.": 77, "Moderna opens the door to enforcing its vaccine patents in some countries.": 57, "W.H.O. condemns attacks on health care services in Ukraine and calls for safe passage for medical supplies.": 54, "U.N. Human Rights Chief to Visit China": 70, "Ukrainians Trying to Flee to U.K. Face a Confounding Path": 113}, "Ukrainians Trying to Flee to U.K. Face a Confounding Path": {"How Maori Stepped In to Save a Towering Tree Crucial to Their Identity": 89, "Moldovans Welcome Fleeing Ukrainians, but Some Pack Their Own Bags, Too": 130, "For this border crisis, Poles extend a warm welcome, unlike last time.": 120, "Biden bans U.S. imports of Russian oil and natural gas, and Britain vows to phase Russian oil out.": 88, "Battlefield reports are murky, but signs of Ukraine\u2019s successes emerge.": 61, "Moderna opens the door to enforcing its vaccine patents in some countries.": 41, "W.H.O. condemns attacks on health care services in Ukraine and calls for safe passage for medical supplies.": 65, "U.N. Human Rights Chief to Visit China": 73, "A 459-Foot Mystery in a Tuscan Port: Is It a Russian\u2019s Superyacht?": 113}}'
+        let min_max = JSON.parse('{"max": 130, "min": 26}')
+        
+        let min = min_max['min']
+        let max = min_max['max']
+
+        // some tests
+        // console.log(min)
+
+        let data = JSON.parse(data_0)
+        let headlines_ie_keys = Object.keys(data);
+
+        // console.log('Data.type')
+        // console.log(typeof(data));
+        // // object
+
+        // console.log('\nData[0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]);
+        // // the whole dictionary
+
+        // console.log('\nData[0][0].type')
+        // console.log(typeof(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]));
+        // // number
+
+        // console.log('\nData[0][0]')
+        // console.log(data["Drawn and Caricatured: French Cartoonists on the Campaign Trail"]["Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years"]);
+        // // 96
+
+        // console.log('\nKeys: type, key[1], and headlines_ie_keys.length')
+        // console.log(typeof(headlines_ie_keys));
+        // // object
+        // console.log(headlines_ie_keys[1]);
+        // // Star Ferry, ‘Emblem of Hong Kong,’ May Sail Into History After 142 Years
+
+        // console.log(headlines_ie_keys.length);
+        // // 10
+
+
+
+
+        // P5 Section
+
+
+
+
+
+        let x_feeds = []
+        let y_feeds = []
+        let x_offsets = []
+        let y_offsets = []
+        let headlines_to_show = []
+        let starting_pt, h;
+        let whole_h
+        let stroke_weight
+        let weights_keys
+
+
+        function setup() {
+            starting_pt = 400;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight;
+
+            // canvas = createCanvas(document.body.clientWidth+(16), document.body.scrollHeight);
+            if(h > whole_h){
+                canvas = createCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                canvas = createCanvas(windowWidth, 1.1*whole_h);
+            };
+
+
+            canvas.position(0, 0);
+            canvas.style('z-index', '-1');
+            // console.log(data.headline);
+            // console.log('hi')
+
+            textFont('prestige-elite-std')
+
+            for(i=0; i < headlines_ie_keys.length; i++){
+
+                x_offsets[i] = random(0, 0.001);
+                y_offsets[i] = random(0, 0.001);
+
+                x_feeds[i] = random(0, 100);
+                y_feeds[i] = random(0, 500);
+
+                headlines_to_show[i] = new Headline(String(headlines_ie_keys[i]), x_offsets[i], y_offsets[i], x_feeds[i], y_feeds[i]);
+
+            };
+        };
+
+        function windowResized() {
+
+            starting_pt = 300;
+            h = windowHeight;
+            whole_h = document.body.scrollHeight
+
+            if(h > whole_h){
+                resizeCanvas(windowWidth, 1.1*h);
+            } else if(h < whole_h){
+                resizeCanvas(windowWidth, 1.1*whole_h);
+            };    // canvas.style('width', windowWidth);
+            // canvas.style('height', document.body.scrollHeight);
+
+        };
+
+
+        class Headline{
+
+            constructor(_string, _x_offset, _y_offset, _x_feed, _y_feed){
+                this._string = _string;
+                this.x_offset = _x_offset;
+                this.y_offset = _y_offset;
+                this.x_feed = _x_feed;
+                this.y_feed = _y_feed;
+                this.x;
+                this.y;
+            };
+
+            show(){
+                this.place_and_move()
+                text(this._string, this.x, this.y, 200, 500);
+            };
+            place_and_move(){
+                this.x = map(noise(this.x_feed), 0, 1, starting_pt, windowWidth);
+                this.y = map(noise(this.y_feed), 0, 1, 0, windowHeight);
+                this.x_feed += this.x_offset;
+                this.y_feed += this.y_offset;
+            };
+        }
+
+        function draw(){
+
+            background(0);
+
+            rect(0, 0, 500, canvas.height)
+
+            noStroke();
+
+            push()
+            textSize(30)
+            fill(150, 42, 46)
+            text('Headlines of the Day', windowWidth/2, 100)
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                textStyle(BOLD);
+                textSize(16)
+                headlines_to_show[i].show();
+
+            };
+            pop()
+
+            push()
+            strokeCap(SQUARE);
+            stroke(150, 42, 46, 30);
+            fill(150, 42, 46, 30);
+
+            for(i=0; i<headlines_ie_keys.length; i++){
+
+                weights_keys = Object.keys(data[String(headlines_ie_keys[i])])
+
+                for(u=0; u<weights_keys.length; u++){
+                    push()
+                    stroke_weight = map(data[headlines_ie_keys[i]][weights_keys[u]], min, max, 1, 10)
+                    strokeWeight(stroke_weight)
+                    line(headlines_to_show[i].x-20, headlines_to_show[i].y, headlines_to_show[u].x-20, headlines_to_show[u].y)
+                    pop()
+                }
+                circle(headlines_to_show[i].x-20, headlines_to_show[i].y, 20)
+            };
+            pop()
+            // separated because if together, there would be no x or y for
+            // headlines_to_show[u]
+
+        };
+
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id='left_side'>
+            <h1>Concrete Poetry<br>&emsp;&emsp;&emsp;of Modern Love</h1>
+            <a id="back" href="index.html">&#8592; back</a>
+            <br><br>
+            <h2>I Really Didn’t Want to Hurt Her</h2>
+            <br><br>
+            <div id='txt'><p><br>&emsp;&emsp;The<br>&emsp;&emsp;day&emsp;after<br>&emsp;an&emsp;&emsp;&emsp;ill-fated<br>&emsp;&emsp;second&emsp;&emsp;&emsp;date,&emsp;&emsp;&emsp;&emsp;I&emsp;called&emsp;my&emsp;&emsp;&emsp;little&emsp;&emsp;brother&emsp;as<br>&emsp;&emsp;&emsp;&emsp;I<br>&emsp;&emsp;&emsp;lay&emsp;&emsp;&emsp;in&emsp;&emsp;&emsp;bed,&emsp;&emsp;&emsp;despondent,<br>&emsp;&emsp;&emsp;in&emsp;&emsp;my<br>&emsp;&emsp;&emsp;dingy&emsp;&emsp;college&emsp;&emsp;&emsp;apartment.&emsp;&emsp;“I&emsp;&emsp;&emsp;&emsp;don’t&emsp;&emsp;have&emsp;&emsp;time&emsp;to&emsp;come&emsp;&emsp;home&emsp;&emsp;&emsp;&emsp;&emsp;and&emsp;&emsp;do&emsp;&emsp;&emsp;laundry&emsp;&emsp;&emsp;today,”<br>&emsp;I<br>&emsp;&emsp;&emsp;said.&emsp;&emsp;“Oh,&emsp;and&emsp;&emsp;&emsp;&emsp;I&emsp;&emsp;met&emsp;&emsp;someone.”&emsp;&emsp;&emsp;My&emsp;&emsp;&emsp;brother,<br>&emsp;&emsp;&emsp;&emsp;&emsp;Felix,&emsp;listened&emsp;&emsp;quietly&emsp;&emsp;&emsp;to&emsp;&emsp;my&emsp;&emsp;&emsp;&emsp;inventory&emsp;&emsp;of&emsp;&emsp;hesitations:<br>&emsp;She&emsp;liked&emsp;&emsp;&emsp;&emsp;me&emsp;&emsp;&emsp;more&emsp;&emsp;than&emsp;&emsp;&emsp;I&emsp;&emsp;liked&emsp;&emsp;her.&emsp;&emsp;She&emsp;&emsp;&emsp;wanted&emsp;commitment.&emsp;She&emsp;lived&emsp;&emsp;&emsp;around&emsp;&emsp;the&emsp;&emsp;&emsp;&emsp;block,&emsp;&emsp;and<br>&emsp;I&emsp;&emsp;&emsp;&emsp;really&emsp;&emsp;&emsp;didn’t&emsp;want&emsp;&emsp;to&emsp;&emsp;&emsp;hurt&emsp;&emsp;&emsp;her.&emsp;&emsp;A&emsp;pause.&emsp;&emsp;&emsp;My&emsp;&emsp;brother<br>&emsp;&emsp;said,&emsp;&emsp;&emsp;“You<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;have<br>&emsp;time&emsp;&emsp;&emsp;&emsp;for&emsp;&emsp;one&emsp;load.&emsp;&emsp;&emsp;&emsp;&emsp;I’ll&emsp;&emsp;come&emsp;get&emsp;&emsp;&emsp;you.”&emsp;&emsp;&emsp;His<br>&emsp;&emsp;&emsp;pragmatic,&emsp;&emsp;&emsp;&emsp;gentle&emsp;&emsp;&emsp;love<br>&emsp;&emsp;is&emsp;&emsp;just&emsp;&emsp;&emsp;right.&emsp;—&emsp;&emsp;Ione&emsp;&emsp;Madsen&emsp;Hardy</p></div>
+        </div>
+    </main>
+</body>
