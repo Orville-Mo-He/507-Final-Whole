@@ -324,12 +324,21 @@ if __name__ == '__main__':
         pattern = r"Tiny Love Stories: ‘|’$"
         article['headline'] = re.sub(pattern, '', article['headline']['main'])
 
+        
+        # when instantiating a News_Article, it will automatically get the
+        # text (scrape site and the whole shubang), create the compare list,
+        # and create a json dict of itself
 
         news_list = [News_Article(headline=result['headline']['main'], web_url=result['web_url'])
             for result in resource_result['response']['docs']
         ]
         all_news[article['headline']] = [news_article.jsoned for news_article in news_list]
 
+
+        # when instantiating a Love_story, it will automatically grab the story
+        # (scrape site and the whole shubang), and, since the news is populated
+        # it will also create the edge weights between each node (article) in 
+        # the graph.
 
         love_story_instances.append(
             Love_story(
@@ -359,7 +368,10 @@ if __name__ == '__main__':
 
     for story in love_story_instances:
         story.stir_html_concrete()
+        # ^ this manipulates the raw text of the story into a concrete poem.
+
         story.jsonable()
+        # recreate each story's jsoned attribute (in order to include the .concrete attribute)
         with open(f"Final/website/love_story_{love_story_instances.index(story)}.html", 'w', encoding="utf-8") as file_obj:
             file_obj.write(HTML_BASE.format(title = story.headline, txt = story.concrete, data = json.dumps(story.jsoned['weights']), data2 = json.dumps(story.jsoned['min_n_max']), script_string=script_string))
         print(f'<li><a href="love_story_{love_story_instances.index(story)}.html">{story.headline}</a></li>')
@@ -369,54 +381,3 @@ if __name__ == '__main__':
     write_json('Final/website/data/all_news.json', all_news)
     write_json('Final/website/data/love_stories.json', love_stories)
 
-
-
-'''
-### Pseudo
-
-it needs to access the web api
-then get all in for each modern love story
-it needs to parse it and delete every instance that isn't tiny or is a podcast
-
-it also needs to access the publication date
-and conduct a search for the breaking news of that date and store them into a
-separate json file
-
-It then needs to go to each of the ML pages and scrape the text of it
-then it needs to break the text into a list of lines and then break each
-line into a list of words.
-
-    a possible way of making the poem is by inserting a random number of
-    spaces between words (probably a perlin noise random)
-
-then join everything back together and write it to a json file
-
-for each headline, access the contents of the page
-    delete all the filler words
-    sort by most common
-    compare each headline's set of words and define the weight of the edges
-    based on how many common words (or at least the proximity to one another)
-    this will need to be a number that can be passed into P5
-
-On the P5 side we need to create the canvas in the bg
-    render the words for the headlines
-    element.width is value for width we need to use for the canvas.
-'''
-
-
-
-'''
-CITED:
-    NetworkX:
-        Aric A. Hagberg, Daniel A. Schult and Pieter J. Swart, “Exploring
-        network structure, dynamics, and function using NetworkX”, in
-        Proceedings of the 7th Python in Science Conference (SciPy2008), Gäel
-        Varoquaux, Travis Vaught, and Jarrod Millman (Eds), (Pasadena, CA USA),
-        pp. 11-15, Aug 2008
-
-        Copyright (C) 2004-2022, NetworkX Developers
-        Aric Hagberg <hagberg@lanl.gov>
-        Dan Schult <dschult@colgate.edu>
-        Pieter Swart <swart@lanl.gov>
-        All rights reserved.
-'''
